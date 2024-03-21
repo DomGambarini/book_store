@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount'
 ]
 
 MIDDLEWARE = [
@@ -47,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'indie_book_emporium.urls'
@@ -59,13 +64,33 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.request',  # required for the 'request' object to be available in templates
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`. Needed for superusers
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by email
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+SITE_ID = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'  # allow users to log in using either their username or email address
+ACCOUNT_EMAIL_REQUIRED = True  # require email address when signing up
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'  # require email verification before the account becomes active
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True  # require the user to enter their email address twice when signing up
+ACCOUNT_USERNAME_MIN_LENGTH = 4  # set the minimum length of the username to 4 characters
+LOGIN_URL = '/accounts/login/'  # set the URL to redirect to when login is required
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'indie_book_emporium.wsgi.application'
 
