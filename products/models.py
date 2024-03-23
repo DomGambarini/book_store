@@ -28,7 +28,6 @@ class Product(models.Model):
     new_arrival = models.BooleanField(blank=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     isbn = models.CharField(max_length=13, null=True, blank=True)
     by_age = models.CharField(max_length=8, choices=[
