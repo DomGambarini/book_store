@@ -4,11 +4,11 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Books </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a class="dropdown-item" href="">Fiction</a>
-                <a class="dropdown-item" href="">Non-Fiction</a>
-                <a class="dropdown-item" href="">Children and Teens</a>
-                <a class="dropdown-item" href="">Zines</a>
-                <a class="dropdown-item" href="{% url 'products' %}">All Books</a>
+                <a class="dropdown-item" href="{% url 'products' %}?catergory=fiction">Fiction</a>
+                <a class="dropdown-item" href="{% url 'products' %}?catergory=non-fiction">Non-Fiction</a>
+                <a class="dropdown-item" href="{% url 'products' %}?catergory=children,teens">Children and Teens</a>
+                <a class="dropdown-item" href="{% url 'products' %}?catergory=zines">Zines</a>
+                <a class="dropdown-item" href="{% url 'products' %}?catergory=fiction,non-fiction,children,teens,zines">All Books</a>
             </div>
         </li>
 
