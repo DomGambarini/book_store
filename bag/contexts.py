@@ -14,9 +14,7 @@ def bag_contents(request):
     bag = request.session.get('bag', {})
 
     for item_id, quantity in bag.items():
-        # This is the same code as in the shopping bag view
-        # but we are now using the product_id to get the product
-        # from the database
+        # This is the same code as in the shopping bag view. This is the bag from the session.
         product = get_object_or_404(Product, pk=item_id)
         total += quantity * product.price
         product_count += quantity
