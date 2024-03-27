@@ -1,6 +1,7 @@
 
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -77,11 +78,11 @@
                                             </div>
                                         </form>
                                         <a class="update-link text-info">Update</a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id}}" data-size>Remove</a>
+                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size>Remove</a>
                                     </td>
                                     
                                     <td class="py-3">
-                                        <p class="my-0">£{{ item.product.price }}</p>
+                                        <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -143,14 +144,16 @@
     // Remove item on click
     $('.remove-item').click(function(e) {
         let csrfToken = "{{ csrf_token }}";
-        let item_id = $(this).attr('id').split('remove_')[1];
+        let itemId = $(this).attr('id').split('remove_')[1];
         let url = `/bag/remove/${itemId}/`;
-        let data = {'csrfmiddlewaretoken': csrfToken};
+        let data = {
+            'csrfmiddlewaretoken': csrfToken,
+            };
 
         $.post(url, data)
-            .done(function() {
-                location.reload();
-            });
+        .done(function() {
+            location.reload();
+        });
     })
 </script>
 {% endblock %}
