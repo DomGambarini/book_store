@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -61,6 +63,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'indie_book_emporium.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -75,7 +79,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',  # required for the 'request' object to be available in templates
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',  # add the media context processor to the TEMPLATES setting
                 'bag.contexts.bag_contents',  # add the bag_contents context processor to the TEMPLATES setting
+            ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
             ],
         },
     },
