@@ -25,6 +25,7 @@ class OrderAdmin(admin.ModelAdmin):
         'full_name',
         'email',
         'phone_number',
+        'postcode',
         'country',
         'town_or_city',
         'street_address1',
