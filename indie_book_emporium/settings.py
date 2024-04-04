@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['indie-book-emporium.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['https://indie-book-emporium-b10db93763d5.herokuapp.com/', '127.0.0.1', 'localhost']
 
 
 # Application definition
