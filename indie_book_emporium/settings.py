@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import dj_database_url
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -30,7 +31,7 @@ SECRET_KEY = 'django-insecure-*f4^4)6gw58o!in5aovvg_zg)2zmrrgq*&d57zqp9y1x8@&-j2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['indie-book-emporium.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -123,12 +124,17 @@ WSGI_APPLICATION = 'indie_book_emporium.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if "DATABASE_URL" in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+            }
+        }
 
 
 # Password validation

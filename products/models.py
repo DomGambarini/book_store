@@ -3,11 +3,22 @@ from django.db import models
 
 class Category(models.Model):
     """Category Models"""
-    name = models.CharField(max_length=254)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     class Meta:
         verbose_name_plural = 'Categories'
+
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    FICTION = 'Fiction'
+    NON_FICTION = 'Non-Fiction'
+    CHILDREN_AND_TEENS = 'Children and Teens'
+
+    CATEGORY_CHOICES = [
+        (FICTION, 'Fiction'),
+        (NON_FICTION, 'Non-Fiction'),
+        (CHILDREN_AND_TEENS, 'Children and Teens'),
+    ]
 
     def __str__(self):
         return self.name
