@@ -30,10 +30,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG") == "True"
+DEBUG = True
 
 ALLOWED_HOSTS = ['indie-book-emporium-b10db93763d5.herokuapp.com/', '127.0.0.1', 'localhost', '[::1]', '8000-domgambarini-bookstore-p4eklledq4c.ws-eu110.gitpod.io']
-
+https://indie-book-emporium-b10db93763d5.herokuapp.com/
 
 # Application definition
 
