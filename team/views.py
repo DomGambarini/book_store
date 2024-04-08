@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Team
 
 # Create your views here.
 
@@ -6,4 +7,10 @@ from django.shortcuts import render
 def team(request):
     """ A view to return the team page """
 
-    return render(request, 'team/team.html')
+    team_member = Team.objects.all(
+        context = {
+            'team_member': team_member
+        }
+    )
+    return render(request, 'team/team.html', context)
+
