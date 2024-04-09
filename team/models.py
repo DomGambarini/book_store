@@ -5,7 +5,7 @@ from django.db import models
 class Team(models.Model):
     name = models.CharField(max_length=50, null=False, blank=False)
     position = models.CharField(max_length=50, null=False, blank=False)
-    bio = models.CharField(max_length=50, null=False, blank=False)
+    bio = models.TextField(max_length=1000, null=False, blank=False)
     profile_picture = models.ImageField(null=True, blank=True)
 
     def __str__(self):
