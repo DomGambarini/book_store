@@ -7,9 +7,9 @@ from .models import Team
 def team(request):
     """ A view to return the team page """
 
-    team_member = Team.objects.all()
+    team_members = Team.objects.all()
     context = {
-        'team_member': team_member
+        'team_members': team_members
     }
     return render(request, 'team/team.html', context)
 

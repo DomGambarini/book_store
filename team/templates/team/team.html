@@ -19,7 +19,17 @@
         <div class="row">
             <div class="col">
                
-                {{ team_member}}
+                <table>
+                    {% for member in team_members %}
+                    <tr>
+                        <td>{{ member.name }}</td>
+                        <td>{{ member.position }}</td>
+                        <td>{{ member.bio }}</td>
+                        <td>{{ member.image }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                
             </div>
         </div>
 
