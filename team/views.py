@@ -43,3 +43,9 @@ def edit_team_member(request, member_id):
         'form': form
     }
     return render(request, 'team/edit_team_member.html', context)
+
+
+def delete_team_member(request, member_id):
+    team_member = get_object_or_404(Team, id=member_id)
+    team_member.delete()
+    return redirect('team')

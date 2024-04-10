@@ -54,7 +54,7 @@
                 <a href="{% url 'edit_team_member' member.id %}">
                    <button>Edit</button> 
                 </a> |
-                <a class="text-danger" href="">Delete</a>
+                <a class="text-danger" href="{% url 'delete_team_member' member.id %}">Delete</a>
             </small>
             {% endif %}
         </div>
