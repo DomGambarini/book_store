@@ -59,7 +59,7 @@
                 </div>
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="">
+                    <a href="{% url 'edit_event' event.id %}">
                     <button>Edit</button> 
                     </a> |
                     <a class="text-danger" href="">Delete</a>

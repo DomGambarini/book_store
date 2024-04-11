@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse
 from .models import Event
 from .forms import EventForm
 
@@ -31,18 +32,18 @@ def add_event(request):
     return render(request, 'events/add_event.html', context)
 
 
-# def edit_team_member(request, member_id):
-#     team_member = get_object_or_404(Team, id=member_id)
-#     if request.method == "POST":
-#         form = TeamForm(request.POST, instance=team_member)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('team')
-#     form = TeamForm(instance=team_member)
-#     context = {
-#         'form': form
-#     }
-#     return render(request, 'team/edit_team_member.html', context)
+def edit_event(request, event_id):
+    event = get_object_or_404(Event, id=event_id)
+    if request.method == "POST":
+        form = EventForm(request.POST, instance=event)
+        if form.is_valid():
+            form.save()
+            return redirect('events')
+    form = EventForm(instance=event)
+    context = {
+        'form': form,
+    }
+    return render(request, 'events/edit_event.html', context)
 
 
 # def delete_team_member(request, member_id):
