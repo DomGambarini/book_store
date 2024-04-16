@@ -142,6 +142,79 @@
     {% block content %}
     {% endblock %}
 
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <!-- Newsletter -->
+        <div class="row" class="footer-details">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <h5 class="general-sub" id="footer-heading">Join Our Newsletter</h5>
+
+                <form action="https://formdump.codeinstitute.net" method="post">
+                    <div>
+                        <label for="name-field" id="namefield">Name</label>
+                        <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+                    </div>
+                    <div>
+                        <label for="email-field" id="emailfield">Email</label>
+                        <input id="email-field" type="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <button type="submit" id="signup-button"><strong>Sign Me Up!</strong></button>
+
+                </form>
+            </div>
+
+            <!-- Opening Hours -->
+
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <h5>Store Opening Hours</h5>
+
+                <div>
+                    <P>Monday to Thursday 9 to 17:00</P>
+                    <P>Friday and Saturday 9 to 18:00</P>
+                    <p>Sunday Closed</p>
+                </div>
+
+            </div>
+
+            <!-- Social Icons (taken from Code Institute module: Mini Project with Bootstrap)-->
+
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <h5>Social</h5>
+
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.twitter.com">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.pinterest.com">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    {% block after_footer %}
+    {% endblock %}
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
