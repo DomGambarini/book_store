@@ -6,7 +6,7 @@ class Event(models.Model):
     date_field = models.DateField()
     time_field = models.TimeField()
     description = models.TextField(max_length=4000, null=False, blank=False)
-    duration = models.DurationField()
+    duration = models.CharField(max_length=50, null=False, blank=False)
     image = models.ImageField(null=False, blank=False)
 
     def __str__(self):

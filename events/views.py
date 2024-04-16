@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.urls import reverse
 from .models import Event
 from .forms import EventForm
 
@@ -17,7 +16,7 @@ def events(request):
 
 
 def add_event(request):
-    """ A view to add a new member of staff """
+    """ A view to add a new event """
 
     if request.method == "POST":
         form = EventForm(request.POST)
@@ -46,7 +45,7 @@ def edit_event(request, event_id):
     return render(request, 'events/edit_event.html', context)
 
 
-# def delete_team_member(request, member_id):
-#     team_member = get_object_or_404(Team, id=member_id)
-#     team_member.delete()
-#     return redirect('team')
+def delete_event(request, event_id):
+    event = get_object_or_404(Event, id=event_id)
+    event.delete()
+    return redirect('events')
