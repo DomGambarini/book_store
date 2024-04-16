@@ -19,7 +19,8 @@ def add_event(request):
     """ A view to add a new event """
 
     if request.method == "POST":
-        form = EventForm(request.POST)
+        # form = EventForm(request.POST)
+        form = EventForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('events')

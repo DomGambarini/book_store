@@ -62,7 +62,7 @@
                     <a href="{% url 'edit_event' event.id %}">
                     <button>Edit</button> 
                     </a> |
-                    <a class="text-danger" href="">Delete</a>
+                    <a class="text-danger" href="{% url 'delete_event' event.id %}">Delete</a>
                 </small>
                 {% endif %}
             </div>
