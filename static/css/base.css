@@ -31,6 +31,10 @@ body {
     background: #000 !important;
 }
 
+#hero-image-title-container {
+    
+}
+
 /* Overlay */
 .overlay {
     height: 100%;
@@ -175,6 +179,9 @@ body {
     border-radius: 0;
 }
 
+.col-7 h1 {
+    font-size: 1rem;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -194,10 +201,33 @@ body {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 5px;
     }
 
     body {
         height: calc(100vh - 116px);
     }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h6 {
+        font-size: .7rem;
+    }
+
+     /* Reduced font size for homepage hero image content */
+    .col-7 h1 {
+        font-size: 0.5rem;
+      }
 }
+
