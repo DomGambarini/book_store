@@ -31,20 +31,6 @@ body {
     background: #000 !important;
 }
 
-
-/* #hero-header-content {
-    position: absolute;
-    height: 350px;
-    width: 350px;
-    margin-top: 250px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-} */
-
 /* Overlay */
 .overlay {
     height: 100%;
@@ -216,6 +202,10 @@ body {
         height: calc(100vh - 116px);
     }
 
+    .display-4.logo-font.text-white {
+        font-size: 2rem;
+    }
+
     .nav-link {
         padding: 0.15rem;
     }
@@ -229,14 +219,9 @@ body {
         font-size: 1rem;
     }
 
-    #delivery-banner h6 {
-        font-size: .7rem;
+    #delivery-banner h4 {
+        font-size: .9rem;
     }
-
-    /* Reduced font size for homepage hero image content */
-
-    .col-7 h1 {
-        font-size: 0.9rem;
-      } 
+   
 }
 
