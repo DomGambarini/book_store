@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['indie-book-emporium-b10db93763d5.herokuapp.com', '127.0.0.1', 'localhost', '[::1]', '8000-domgambarini-bookstore-p4eklledq4c.ws-eu110.gitpod.io']
 
@@ -219,10 +219,10 @@ STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
 STRIPE_CURRENCY = 'usd'
 STRIPE_WH_SECRET = os.getenv("STRIPE_WH_SECRET")
 
-if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'indiebookemporiumexample@example.com'
-else:
+# if 'DEVELOPMENT' in os.environ:
+#     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#     DEFAULT_FROM_EMAIL = 'indiebookemporiumexample@example.com'
+# else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
