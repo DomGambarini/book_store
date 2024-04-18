@@ -32,20 +32,18 @@ body {
 }
 
 
-#hero-header-content {
+/* #hero-header-content {
     position: absolute;
     height: 350px;
     width: 350px;
     margin-top: 250px;
-    right: 0;
-    margin-right: 70px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-}
+} */
 
 /* Overlay */
 .overlay {
