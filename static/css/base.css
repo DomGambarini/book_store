@@ -36,6 +36,7 @@ body {
     position: absolute;
     height: 350px;
     width: 350px;
+    margin-top: 250px;
     right: 0;
     margin-right: 70px;
     -webkit-background-size: cover;
@@ -234,11 +235,10 @@ body {
         font-size: .7rem;
     }
 
-     /* Reduced font size for homepage hero image content
-    .col-7 h1 {
-        font-size: 0.8rem;
-      } */
+    /* Reduced font size for homepage hero image content */
 
-      
+    .col-7 h1 {
+        font-size: 0.9rem;
+      } 
 }
 
