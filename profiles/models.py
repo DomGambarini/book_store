@@ -4,11 +4,9 @@ from django.dispatch import receiver
 from django.contrib.auth.models import User
 from django_countries.fields import CountryField
 
-# Create your models here.
-
 
 class UserProfile(models.Model):
-    """ A user profile model for maintaining default"""
+    """ A user profile model for maintaining default delivery information"""
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
     default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
