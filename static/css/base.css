@@ -35,6 +35,10 @@ footer {
     font-style: normal;
 
 }
+
+#footer-padding {
+    padding-top: 30px;
+}
   
 #cta-hero-container {
     margin-top: 100px;
