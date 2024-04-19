@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+
 body {
     background: url('/media/bookshop-hero-image.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -9,6 +10,15 @@ body {
     color: #555;
     font-family: 'Lato';
 }
+
+#home-link {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  } 
+  
+
 
 /* from Bulma */
 .icon {
