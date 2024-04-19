@@ -8,17 +8,42 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: "Open Sans", sans-serif;
 }
 
-#home-link {
-    font-family: "Playfair Display", serif;
+header {
+    font-family: "Bebas Neue", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  } 
-  
+  }
 
+.center-row {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh; /* Optionally, to center vertically too */
+}
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+  
+#cta-hero-container {
+    margin-top: 100px;
+}
+
+#cta-hero-bg {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
 
 /* from Bulma */
 .icon {
@@ -185,11 +210,6 @@ body {
     border-radius: 0;
 }
 
-/* Footer */
-
-footer {
-    margin-top: 100px;
-}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -218,7 +238,7 @@ footer {
 
     .display-4.text-white {
         font-size: 2rem;
-        padding-top: 100px;
+        padding: 10px;
     }
 
     .nav-link {
