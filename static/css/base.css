@@ -175,7 +175,11 @@ body {
     border-radius: 0;
 }
 
+/* Footer */
 
+footer {
+    margin-top: 100px;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -195,15 +199,16 @@ body {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 5px;
+        padding-top: 116px;
     }
 
     body {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-white {
+    .display-4.text-white {
         font-size: 2rem;
+        padding-top: 100px;
     }
 
     .nav-link {
@@ -222,6 +227,8 @@ body {
     #delivery-banner h4 {
         font-size: .9rem;
     }
-   
+
+
+
 }
 
