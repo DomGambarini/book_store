@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'profiles',
     'team',
     'events',
+    'contact',
 
     # Other apps
     'crispy_forms',
