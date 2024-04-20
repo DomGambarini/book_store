@@ -114,7 +114,7 @@ SITE_ID = 1
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'  # allow users to log in using either their username or email address
 ACCOUNT_EMAIL_REQUIRED = True  # require email address when signing up
-ACCOUNT_EMAIL_VERIFICATION = 'none'  # require email verification before the account becomes active
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'  # require email verification before the account becomes active
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True  # require the user to enter their email address twice when signing up
 ACCOUNT_USERNAME_MIN_LENGTH = 4  # set the minimum length of the username to 4 characters
 LOGIN_URL = '/accounts/login/'  # set the URL to redirect to when login is required
