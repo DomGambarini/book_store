@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.contrib import messages
 from .models import Team
 from .forms import TeamForm
-
-# Create your views here.
+from django.contrib.auth.decorators import login_required
 
 
 def team(request):
@@ -15,15 +15,19 @@ def team(request):
     return render(request, 'team/team.html', context)
 
 
+@login_required
 def add_team_member(request):
     """ A view to add a new member of staff """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
     if request.method == "POST":
         form = TeamForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('team')
-    
+
     form = TeamForm()
     context = {
         'form': form
@@ -31,7 +35,12 @@ def add_team_member(request):
     return render(request, 'team/add_team_member.html', context)
 
 
+@login_required
 def edit_team_member(request, member_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     team_member = get_object_or_404(Team, id=member_id)
     if request.method == "POST":
         form = TeamForm(request.POST, instance=team_member)
@@ -45,7 +54,12 @@ def edit_team_member(request, member_id):
     return render(request, 'team/edit_team_member.html', context)
 
 
+@login_required
 def delete_team_member(request, member_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     team_member = get_object_or_404(Team, id=member_id)
     team_member.delete()
     return redirect('team')
