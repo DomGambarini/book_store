@@ -28,9 +28,9 @@
     
     <div class="row">
         {% for member in team_members %}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 text-center">
             
-            <div class="card m-4 p-2" style="width: 18rem;">
+            <div class="card mb-4 h-100">
                 {% if member.profile_picture %}
                     <img class="card-img-top img-fluid" src="{{ member.profile_picture.url }}" alt="{{ member.name }}">
                     {% else %}
