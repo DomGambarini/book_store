@@ -262,6 +262,9 @@ footer {
         font-size: .9rem;
     }
 
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
 
 
 }
