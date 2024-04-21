@@ -70,3 +70,7 @@ I used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML
 | Checkout - Stripe Script | ![Stripe elements](./test-images/checkout-stripe.js.png) | none | none |
 | Products - Quantity Input Script | ![Product quantity script](./test-images/product-quantity-input-script.png) | none  | none |
 
+[Back to top](#testing)
+### CSS Testing
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS files.
+Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css-validator.png)
