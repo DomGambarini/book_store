@@ -261,11 +261,5 @@ footer {
     #delivery-banner h4 {
         font-size: .9rem;
     }
-
-    /* prevent mobile header icons from wrapping on small screens */
-    .navbar {
-        flex-wrap: nowrap !important;
-    }
-
 }
 
