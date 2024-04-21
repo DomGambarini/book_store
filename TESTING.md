@@ -5,6 +5,10 @@
     - [Python Testing](#python-testing)
     - [JavaScript Validation](#javascript-validation)
     - [CSS Testing](#css-testing)
+    - [Browser Compatibility](#browser-compatibility)
+    - [Responsiveness Test](#responsiveness-test)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
 
 
 ## Code Validation
@@ -74,3 +78,30 @@ I used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML
 ### CSS Testing
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate my CSS files.
 Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css-validator.png)
+
+#### Browser Compatibility
+
+- Safari 16.4.1
+- Chrome 120.0.6099.199
+- Firefox 122.0
+
+#### Devices
+
+- iPhone SE
+- iPhone XR
+- iPhone S2 Pro
+- iPhone SE14 Pro Max
+- Pixel 7
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- Ipad Mini
+- Ipad Pro
+- Ipad Air
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Samsung Galaxy A51/71
+- Nest Hub Max
+- Nest Hub
+- iPhone 4
+- iPhone 6/7/8
