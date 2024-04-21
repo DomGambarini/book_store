@@ -25,35 +25,35 @@
         </div>
     </div>
 
-    
 
-    
+
+
     <div class="row">
         {% for member in team_members %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 text-center">
-            
+
             <div class="card mb-4 h-100">
                 {% if member.profile_picture %}
-                    <img class="card-img-top img-fluid" src="{{ member.profile_picture.url }}" alt="{{ member.name }}">
-                    {% else %}
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ member.name }}">
+                <img class="card-img-top img-fluid" src="{{ member.profile_picture.url }}" alt="{{ member.name }}">
+                {% else %}
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ member.name }}">
                 {% endif %}
                 <div class="card-body">
-                  <h5 class="card-title">{{ member.name }} | {{ member.position }}</h5>
-                  <p class="card-text">{{ member.bio }}</p>
-                  {% if request.user.is_superuser %}
-                <small class="ml-3">
-                    <a href="{% url 'edit_team_member' member.id %}">
-                    Edit
-                    </a> |
-                    <a class="text-danger" href="{% url 'delete_team_member' member.id %}">Delete</a>
-                </small>
-                {% endif %}
+                    <h5 class="card-title">{{ member.name }} | {{ member.position }}</h5>
+                    <p class="card-text">{{ member.bio }}</p>
+                    {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                        <a href="{% url 'edit_team_member' member.id %}">
+                            Edit
+                        </a> |
+                        <a class="text-danger" href="{% url 'delete_team_member' member.id %}">Delete</a>
+                    </small>
+                    {% endif %}
                 </div>
-              </div>
+            </div>
         </div>
         {% endfor %}
     </div>
-    
+
 </div>
 {% endblock %}

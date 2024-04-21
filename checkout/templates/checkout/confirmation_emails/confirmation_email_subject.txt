@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Indie Book Emporium Confirmation for Order Number {{ order.order_number }}
