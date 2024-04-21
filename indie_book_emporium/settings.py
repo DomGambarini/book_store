@@ -32,7 +32,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['indie-book-emporium-b10db93763d5.herokuapp.com', '127.0.0.1', 'localhost', '[::1]', '8000-domgambarini-bookstore-p4eklledq4c.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = [
+    'indie-book-emporium-b10db93763d5.herokuapp.com', '127.0.0.1',
+    'localhost', '[::1]',
+    '8000-domgambarini-bookstore-p4eklledq4c.ws-eu110.gitpod.io']
 
 # Application definition
 
@@ -80,18 +83,18 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),  # add the templates directory to the TEMPLATES setting
-            os.path.join(BASE_DIR, 'templates', 'allauth'),  # add the allauth templates directory to the TEMPLATES setting
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',  # required for the 'request' object to be available in templates
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media',  # add the media context processor to the TEMPLATES setting
-                'bag.contexts.bag_contents',  # add the bag_contents context processor to the TEMPLATES setting
+                'django.template.context_processors.media',
+                'bag.contexts.bag_contents',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -104,7 +107,8 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
-    # Needed to login by username in Django admin, regardless of `allauth`. Needed for superusers
+    # Needed to login by username in Django admin, regardless of `allauth`
+    #  Needed for superusers
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by email
@@ -113,12 +117,12 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'  # allow users to log in using either their username or email address
-ACCOUNT_EMAIL_REQUIRED = True  # require email address when signing up
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'  # require email verification before the account becomes active
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True  # require the user to enter their email address twice when signing up
-ACCOUNT_USERNAME_MIN_LENGTH = 4  # set the minimum length of the username to 4 characters
-LOGIN_URL = '/accounts/login/'  # set the URL to redirect to when login is required
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'indie_book_emporium.wsgi.application'
@@ -145,16 +149,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 

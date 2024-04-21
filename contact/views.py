@@ -31,12 +31,13 @@ def contact(request):
                 )
             except BadHeaderError:
                 return HttpResponse('Invalid header detected.')
-            messages.success(request, 'Your inquiry has been successfully submitted.')
+            messages.success(
+                request, 'Your inquiry has been successfully submitted.')
             return redirect('thanks')
         else:
             messages.warning(
                 request,
-                'Please provide a valid email address in the format name@domain.com.'
+                'Please provide a valid email in the format name@domain.com.'
             )
     else:
         form = ContactForm()

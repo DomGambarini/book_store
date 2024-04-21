@@ -30,10 +30,13 @@ class Category(models.Model):
 
 class Product(models.Model):
     """Product Models"""
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=254)
     author = models.CharField(max_length=254)
-    publication_date = models.DateField(null=True, blank=True, help_text="Enter the publication date in the format YYYY-MM-DD.")
+    publication_date = models.DateField(
+        null=True, blank=True,
+        help_text="Enter the publication date in the format YYYY-MM-DD.")
     number_of_pages = models.PositiveIntegerField()
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
