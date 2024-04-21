@@ -3,6 +3,8 @@
   - [Code Validation](#code-validation)
     - [HTML Testing](#html-testing)
     - [Python Testing](#python-testing)
+    - [JavaScript Validation](#javascript-validation)
+    - [CSS Testing](#css-testing)
 
 
 ## Code Validation
@@ -39,10 +41,14 @@ I used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML
 | Get in Touch | 0 | 0 |
 
 
+### Python Testing
+[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python files.
+
+
 | Feature               | admin                                       | forms                                       | models                                      | urls                                        | views                                       | extra                                      |
 |-----------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|--------------------------------------------|
 | Bag                   | n/a                                         | n/a                                         | n/a                                         | none ![python validation](./test-images/bag-urls.py.png) | none ![python validation](./test-images/bag-views.py.png) | n/a |
-| Checkout              | none ![python validation](./test-images/checkout-admin.py.png) | none ![python validation](./test-images/checkout-forms.py.png) | none ![python validation](./test-images/checkout-models.py.png) | none ![python validation](./test-images/checkout_urls_py.png) | none ![python validation](./test-images/checkout-views.py.png) | none ![python validation](./test-images/checkout-signals.py.png), none ![python validation](./test-images/checkout-webhook-handler.py.png), none ![python validation](./test-images/checkout-webhook.py.png) |
+| Checkout              | none ![python validation](./test-images/checkout-admin.py.png) | none ![python validation](./test-images/checkout-forms.py.png) | none ![python validation](./test-images/checkout-models.py.png) | none ![python validation](./test-images/checkout-urls.py.png) | none ![python validation](./test-images/checkout-views.py.png) | none ![python validation](./test-images/checkout-signals.py.png), none ![python validation](./test-images/checkout-webhook-handler.py.png), none ![python validation](./test-images/checkout-webhook.py.png) |
 | Contact               | n/a                                         | none ![python validation](./test-images/contact-forms.py.png) | n/a                                         | none ![python validation](./test-images/contact-urls.py.png) | none ![python validation](./test-images/contact-views.py.png) | n/a                                        |
 | Events                | none ![python validation](./test-images/events-admin.py.png) | none ![python validation](./test-images/events-forms.py.png) | none ![python validation](./test-images/events-models.py.png) | none ![python validation](./test-images/events-urls.py.png) | none ![python validation](./test-images/events-views.py.png) | n/a                                        |
 | Home                  | n/a                                         | n/a                                         | n/a                                         | none ![python validation](./test-images/home-urls.py.png) | none ![python validation](./test-images/home-views.py.png) | n/a                                        |
@@ -50,4 +56,17 @@ I used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML
 | Products              | none ![python validation](./test-images/product-admin.py.png) | none ![python validation](./test-images/product-forms.py.png) | none ![python validation](./test-images/product-models.py.png) | none ![python validation](./test-images/product-urls.py.png) | none ![python validation](./test-images/product-views.py.png) | none ![python validation](./test-images/product-widget.py.png) |
 | Profile               | n/a                                         | none ![python validation](./test-images/profile-forms.py.png) | none ![python validation](./test-images/profile-models.py.png) | none ![python validation](./test-images/profile-urls.py.png) | none ![python validation](./test-images/profile-views.py.png) | n/a                                        |
 | Team                  | none ![python validation](./test-images/team-admin.py.png) | none ![python validation](./test-images/team-forms.py.png) | none ![python validation](./test-images/team-models.py.png) | none ![python validation](./test-images/team-urls.py.png) | none ![python validation](./test-images/team-views.py.png) | n/a                                        |
+
+
+[Back to top](#testing)
+
+### JavaScript Validation
+
+[JSHint](https://jshint.com/) was used to validate the JavaScript code.
+
+| Page | Screenshot | Errors | Warnings |
+|---------|----------|----------|-----------|
+| Bag - Quantity Update/Remove Script | ![Bag update/remove js](./test-images/bag-update-remove.js.png) | none | none |
+| Checkout - Stripe Script | ![Stripe elements](./test-images/checkout-stripe.js.png) | none | none |
+| Products - Quantity Input Script | ![Product quantity script](./test-images/product-quantity-input-script.png) | none  | none |
 
