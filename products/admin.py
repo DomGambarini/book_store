@@ -11,16 +11,14 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
         'title',
         'author',
         'publication_date',
         'number_of_pages',
-        'new_arrival',
         'price',
         'category',
-        'by_age',
         'isbn',
+        'sku',
     )
 
     ordering = ('sku',)
