@@ -47,7 +47,8 @@ def all_products(request):
 
             queries = Q(
                 title__icontains=query) | Q(
-                description__icontains=query)
+                description__icontains=query) | Q(
+                author__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
