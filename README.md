@@ -149,37 +149,17 @@ Join us in exploring the world of indie books, enhancing your reading experience
   * `pip3 install 'django<4' gunicorn`
   * `pip3 install dj_database_url psycopg2`
 
-<details><summary><b>Library Installation Guide</b></summary>
-
-![Library Installation](./readme-images/heroku_step_4.png)
-</details><br>
-
 - Following the installation, generate a requirements file:
 
   * `pip3 freeze --local > requirements.txt` - This command captures and lists the installed libraries in `requirements.txt`.
-
-<details><summary><b>Generate Requirements File</b></summary>
-
-![Generate Requirements](./readme-images/heroku_step_5.png)
-</details><br>
 
 - Proceed to create your project:
 
   * `django-admin startproject YOUR_PROJECT_NAME .` - Initiates your Django project.
 
-<details><summary><b>Project Initialization</b></summary>
-
-![Project Initialization](./readme-images/heroku_step_6.png)
-</details><br>
-
 - Next, establish your application within the project:
 
   * `django-admin startapp APP_NAME` - This command creates your application.
-
-<details><summary><b>Application Setup</b></summary>
-
-![Application Setup](./readme-images/heroku_step_7.png)
-</details><br>
 
 - To set up a superuser, enter the following command:
   `python3 manage.py createsuperuser`
@@ -187,11 +167,6 @@ Join us in exploring the world of indie books, enhancing your reading experience
   You'll be prompted to enter user details to complete the superuser setup.
 
 - It's time to integrate the application in your project’s `settings.py` file:
-
-<details><summary><b>Integrate Application in Settings</b></summary>
-
-![Settings Integration](./readme-images/heroku_step_8.png)
-</details><br>
 
 - Proceed with the initial migration and start the server to ensure everything is operational. Use these commands:
 
