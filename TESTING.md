@@ -274,6 +274,24 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
-| Checkout user logged in | Displays users saved address with the name field left blank | Yes, the details are prefilled | Pass |
+| My Account admin logged in | Displays Product management, Event Management, Team Management nav links | Yes, nav links are displayed | Pass |
+
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Products as admin logged in | Edit and delete below product item links displayed when logged in as admin | Yes, edit and delete links displayed below product in all products and product details page are displayed | Pass |
+| Products admin logged in | Click edit link button | Displays edit product page | Pass |
+| Product Management page admin logged in | Submit form with an empty required field | Generates error message mssing field | Pass |
+| Product Management page admin logged in | Enter letters in price field | Does not allow his action | Pass |
+
+
+
+| Status | **Main Website - Admin Logged In - Products/Product Detail Page**
+|:-------:|:--------|
+
+| &check; | The update button leads to saving the updated information and takes the user to the product detail page.
+| &check; | The admin can add a product with no image. In this case a placeholder images is displayed.
+| &check; | Before the admin can delete a chosen product from the store, they have to confirm their deletion choice.
 
 
