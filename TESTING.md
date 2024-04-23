@@ -123,7 +123,7 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Get in Touch | [Get in Touch Us Score](./test-images/lighthouse-getintouch.png) |
 | Get in Touch, Thank You | [Get in Touch Us Thank You Score](./test-images/lighthouse-thank-you.png) |
 | Products | [Products Score](./test-images/lighthouse-all-products.png) |
-| Product Detail | [Products Score](./test-images/lighthouse-product-detail.png) |
+| Product Detail | [Product Detail Score](./test-images/lighthouse-product-detail.png) |
 | Add Product | [Add Product](./test-images/lighthouse-add-product.png) |
 | Edit Product | [Edit Product](./test-images/lighthouse-edit-product.png) |
 | Event | [Event](./test-images/lighthouse-event-page.png) |
@@ -135,8 +135,8 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Admin Dashboard | [Admin Dashboard](./test-images/lighthouse-admin.png) |
 | Shopping Bag | [Shopping Bag Score](./test-images/lighthouse-shopping-bag.png) |
 | Checkout | [Checkout Score](./test-images/lighthouse-checkout.png) |
-| Checkout Success | [Checkout Score](./test-images/lighthouse-checkout-success.png) |
-| Profile | [Profile Score](./testing-images/lighthouse-my-profile.png) |
+| Checkout Success | [Checkout Success Score](./test-images/lighthouse-checkout-success.png) |
+| Profile | [Profile Score](./test-images/lighthouse-my-profile.png) |
 | Sign In | [Sign In Score](./test-images/lighthouse-sign-in.png) |
 | Register | [Register](./test-images/lighthouse-register.png) |
 | Sign Out | [Sign Out Score](./test-images/lighthouse-sign-out.png) |
