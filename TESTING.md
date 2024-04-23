@@ -310,10 +310,46 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Product Management Add Product page | Click dropdown | Displays correct dropdown category list items | Pass |
 | Product Management Add Product page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
 | Product Management Add Product page | Click a field within the form | Input field highlighted in blue for UX | Pass |
-| Product Management Add Product page | Click Add Product | Displays toast message "Successully added product" | Pass |
+| Product Management Add Product page | Fill form out correctly and click Add Product | Displays toast message "Successully added product" | Pass |
 | Product Management Add Product page | Click cancel button | Returns to all products page | Pass |
 
 
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Event Management Edit page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Event Management Edit page | Enter letters in duration, event and time field | Does not allow this action | Fail |
+| Event Management Edit page | Click choose file and select a file | Image uploaded to event page and only allows an image file to be selected | Fail |
+| Event Management Edit page | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Event Management Edit page | Fill form out correctly and click Update Event | Displays toast message "Successully updated event" | Fail |
+| Event Management Edit page | Click cancel button | Returns to all events page | Pass |
 
 
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Event Management Add Event page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Event Management Add Event page | Enter letters in duration, event and time field | Does not allow this action | Fail |
+| Event Management Add Event page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Fail |
+| Event Management Add Event page | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Event Management Add Event page | Click Add Event | Displays toast message "Successully added event" | Pass |
+| Event Management Add Event page | Click cancel button | Returns to all products page | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Team Management Edit page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Team Management Edit page | Enter letters in duration, Team and time field | Does not allow this action | Fail |
+| Team Management Edit page | Click choose file and select a file | Image uploaded to Team page and only allows an image file to be selected | Fail |
+| Team Management Edit page | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Team Management Edit page | Fill form out correctly and click Update Team | Displays toast message "Successully updated Team" | Fail |
+| Team Management Edit page | Click cancel button | Returns to Team page | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Team Management Add Team member page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Team Management Add Team member page | Enter letters in duration, Team and time field | Does not allow this action | Fail |
+| Team Management Add Team member page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Fail |
+| Team Management Add Team member page | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Team Management Add Team member page | Click Add Team | Displays toast message "Successully added Team Member" | Pass |
+| Team Management Add Team member page | Click cancel button | Returns to Team page | Pass |
 
