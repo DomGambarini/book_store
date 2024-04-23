@@ -150,7 +150,6 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Top Nav menu user logged out | Click Get in touch page link | Displays our get in touch form | Pass |
 
 
-
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 |  Books / All Products page user logged out | Image and info displayed for each book | Card display correct image and info | Pass |
@@ -215,5 +214,13 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Get in Touch Page user logged out | Try sendng form with no data | Returns please fill in field | Pass |
 |  Get in Touch Page user logged out | Click cancel button | Returns to homepage | Pass |
 |  Get in Touch Page user logged out | Complete form correctly and click send message | djangoproject618@gmail.com recieves email and toast success message displayed | Pass |
+|  Get in Touch Page user logged out | Complete form correctly and click send message | Redirects to Thank You page | Pass |
 |  Get in Touch Page user logged out | Click on an empty input field | Input field becomes highlighted blue | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Footer user logged out | Click social icons | each icon opens in seperate tab | Pass |
+|  Footer user logged out | Adjust screen size | Footer displays responsive design | Pass |
+
 
