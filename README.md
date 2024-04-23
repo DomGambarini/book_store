@@ -439,3 +439,31 @@ To ensure your application can send emails upon registration, checkout, and thro
     ```
 
 - AWS S3 Bucket is now connected.
+
+### Stripe
+
+Configure Stripe config vars and webhooks:
+
+  - Login to [Stripe](https://stripe.com/se) and from the dashboard, search for API Keys.
+  - Copy STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY and add them to Heroku config vars, assign these variables values from your Stripe account.
+  - Create a Webhook Endpoint in the Stripe by navigating to webhooks and clicking on Add endpoint. Use the Heroku application url with checkout/wh/ added to the end of the url string. Select all events and click Add endpoint.
+  - Click on Reveal signing secret and save this value as a Heroku config var called STRIPE_WH_SECRET.
+
+#### Here is how to clone code
+
+1. On GitHub.com, navigate to the main page of the repository. You can find that [here](https://github.com/DomGambarini/book_store)
+2. Above the list of files, click <> **Code**.
+3. Copy the URL for the repository.
+4. In a separate tab, open Code Anywhere
+5. Create a new workspace
+6. Type ' git clone ', and then paste the URL you copied earlier.
+7. Press Enter to create your local clone.
+
+Forking: refers to creating a personal copy of someone else's repository under your own GitHub account. This copy is stored in your account and allows you to freely experiment with and make changes to the code without affecting the original repository. If I make changes to the original repo you will be informed and have the option to pull.
+
+#### Here is how to fork code
+
+1. Log in to your GitHub account and navigate to the repository you want to fork. You can find that [here](https://github.com/DomGambarini/book_store)
+2. On the repository's page, click on the "Fork" button located at the top right corner of the page. This action creates a copy of the repository under your GitHub account.
+3. GitHub will redirect you to the forked repository, which is now hosted under your account. You can identify it by the "forked from" message displayed at the top of the repository name.
+4. At this point, you have successfully forked the repository, and you can start working with the code.
