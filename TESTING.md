@@ -117,5 +117,11 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
-| Top Nav user logged out | The free shipping treshold | It corresponds to the value set in the settings.py file. | Pass |
-| Top Nav user logged out | The free shipping treshold | It corresponds to the value set in the settings.py file. | Pass |
+| Top Nav menu user logged out | The free shipping treshold | It corresponds to the value set in the settings.py file. | Pass |
+| Top Nav user menu logged out | Copy / paste url that requires authentification e.g. Product Management | Generates toast error pop up | Pass |
+| Top Nav user menu logged out | Copy / paste url that requires authentification e.g. admin panel | Generates error pop up | Pass |
+| Top Nav user menu logged out | Click search in search bar with no text entered  | Loads toast error | Pass |
+| Top Nav user menu logged out | Click Account menu | Dropdown displays Register and login | Pass |
+| Top Nav user menu logged out | Click Account / Login | Displays login page | Pass |
+| Top Nav user menu logged out | Click Account / Register | Displays register page | Pass |
+| Top Nav user menu logged out | Click Shopping bag icon | Displays empty bag page | Pass |
