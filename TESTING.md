@@ -186,3 +186,34 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Shopping bag user logged out | Adding product to an empty bag | Shopping bag icon changes from blue to green | Pass |
 
 
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Checkout user logged out | Products, image, price and delivery cost displayed | All working accordingly | Pass |
+|  Checkout user logged out | Place an order with an invalid email | Displays error message | Pass |
+|  Checkout user logged out | Option to register or login at the bottom of the form | Links work as required | Pass |
+|  Checkout user logged out | Option to register or login at the bottom of the form | Links work as required | Pass |
+|  Checkout user logged out | Click adjust bag button | Leads to shopping bag page | Pass |
+|  Checkout user logged out | Click complete order when input fields not complete | Displays "Please fill in this field" | Pass |
+|  Checkout user logged out | Enter text in phone number field and process order | Accepts and processes order | Fail |
+|  Checkout user logged out | Enter numbers in name field and process order | Accepts and processes order | Fail |
+|  Checkout user logged out | Enter an invalid card number | Displays you card number is incomplete | Pass |
+|  Checkout user logged out | Click complete order with fields completed correctly | Processes order | Pass |
+|  Checkout user logged out | Form completed with stripe test card details | Toast message displayed with order number, information and email confirmation | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Checkout Success user logged out | Products, image, price and delivery cost displayed | All working accordingly | Pass |
+|  Checkout Success user logged out | Webhook event checked in Stripe dashboard | Successful | Pass |
+|  Checkout Success user logged out | Click "Return to our bookstore" | Redirects to all products page | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Get in Touch Page user logged out | Click Get In Touch link | The correct form is displayed | Pass |
+|  Get in Touch Page user logged out | Enter invalid email address | Error message displayed | Pass |
+|  Get in Touch Page user logged out | Try sendng form with no data | Returns please fill in field | Pass |
+|  Get in Touch Page user logged out | Click cancel button | Returns to homepage | Pass |
+|  Get in Touch Page user logged out | Complete form correctly and click send message | djangoproject618@gmail.com recieves email and toast success message displayed | Pass |
+|  Get in Touch Page user logged out | Click on an empty input field | Input field becomes highlighted blue | Pass |
+
