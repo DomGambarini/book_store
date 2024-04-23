@@ -180,3 +180,262 @@ Join us in exploring the world of indie books, enhancing your reading experience
 
   os.environ["DATABASE_URL"] = "insert your own ElephantSQL database URL here"
   os.environ["SECRET_KEY"] = "enter a random secret key here"
+
+
+## ElephantSQL Database
+
+[ElephantSQL](https://www.elephantsql.com/) is used for the PostgreSQL database in this project.
+
+To create your own PostgreSQL database, sign-up with your GitHub account and follow these steps:
+- Click **Create New Instance** to initiate a new database.
+- Choose a name, usually the name of the project.
+- Select **Tiny Turtle (Free)** plan.
+- Leave the **Tags** blank.
+- Select **Region** and **Data Center** closest to you.
+- Afterwards, click on the new database name, where you can view the db URL and Password. Copy the URL and enter the address into your **config vars in Heroku** and into your `env.py` file.
+
+[Back to top](#contents)
+## Heroku Deployment
+
+The project was deployed to [Heroku](https://www.heroku.com). To deploy, please follow the process below:
+
+- Go to [Heroku](https://www.heroku.com/) and sign in (or create an account if needed).
+- Once signed in, click the button "New" in the top right corner, below the header and choose "Create new app". The name you choose must be unique. Choose a region which is closest to you.
+
+- This brings you to the "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". Click the "Add" button on the right and add the following key/value pairs:
+   - **DATABASE_URL**: `postgres://...`
+   - **DISABLE_COLLECTSTATIC**: `1`
+   - **SECRET_KEY**
+   - **AWS_ACCESS_KEY**
+   - **AWS_SECRET_ACCESS_KEY**
+   - **EMAIL_HOST_PASS**
+   - **EMAIL_HOST_USER**
+   - **STRIPE_PUBLIC_KEY**
+   - **STRIPE_SECRET_KEY**
+   - **STRIPE_WH_SECRET**
+   - **USE_AWS**
+
+  `DISABLE_COLLECTSTATIC` variable is needed only for the initial deployment, later this variable must be removed.
+
+Heroku needs two additional files in order to deploy properly:
+- `requirements.txt`
+- `Procfile`
+
+- Scroll back to the top of the page and choose the "Deploy" tab. Then choose "GitHub" as the Deployment method.
+
+Go to "Connect to GitHub" section, search for the repository name and then click "Connect".
+
+- In the "Automatic Deploys" section, choose your preferred method for deployment. At first, use the manual deployment option, and later change it to automatic deploys. Afterwards, click "Deploy Branch".
+
+Alternatively, you can follow these steps:
+- In the Terminal/CLI connect to Heroku by typing in: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace app_name with your app name)
+- After doing Git `add`, `commit`, `push` to GitHub, you can type in: `git push heroku main`
+
+The project should now be deployed to Heroku.
+
+The link to the live site can be found here - [https://indie-book-emporium-b10db93763d5.herokuapp.com/](https://indie-book-emporium-b10db93763d5.herokuapp.com/).
+The link to the GitHub repository can be found here - [https://github.com/DomGambarini/book_store](https://github.com/DomGambarini/book_store).
+
+Add the Heroku host name into **ALLOWED_HOSTS** in your project's **settings.py** file -> `['herokuappname', 'localhost', '8000 port url']`.
+
+**DISABLE_COLLECTSTATIC** may be removed from the Config Vars once you have saved and pushed an image within your project.
+
+## Google Mail Setup
+
+To ensure your application can send emails upon registration, checkout, and through the contact form, follow these steps to set up an app password in Gmail.
+
+1. Create a Gmail account specifically for managing your project's emails.
+2. Log in to your account and go to **Settings** -> **Other Google Account Settings** -> **Accounts** -> **Import** -> **Other Account Settings**.
+3. Enable 2-Step Verification.
+4. After verification, navigate to **App Passwords** -> **Other**. Enter a descriptive name for your password, such as "Bookworm Kid."
+5. Click **Create** and then copy the generated 16-digit password.
+6. In your `settings.py`, incorporate the following Email Settings by adding a link to the Django email settings image:
+   ![Django Email Settings](./test-images/email-settings.png)
+7. Update your Heroku Config Vars with the `EMAIL_HOST_USER` and `EMAIL_HOST_PASS` variables, setting them to your Gmail address and the newly generated app password, respectively.
+
+
+## AWS Config
+
+[AWS](https://aws.amazon.com) is used to store the media and static files online for Bookworm Kid. To set it up for your project, please follow the steps below:
+
+- Setup AWS Account and Login
+- Create a new S3 Bucket -> name it to match your Heroku App name -> Choose the region closest to you.
+- Allow **Click All Public Access**, tick 'Bucket will be public' in order for the bucket to connect to Heroku. 
+- In **Object Ownership** -> **ACLS Enabled** -> **Bucket Owner Preferred**.
+- **Properties** tab -> turn on static web hosting and add 'index.html' and 'error.html' into the correct fields -> click **Save**
+- In the **Permissions** tab, paste in the following CORS config:
+
+   ```json
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+	```
+- Copy your **ARN** string.
+- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
+	- Policy Type: **S3 Bucket Policy**
+	- Effect: **Allow**
+	- Principal: `*`
+	- Actions: **GetObject**
+	- Amazon Resource Name (ARN): **paste-your-ARN-here**
+	- Click **Add Statement**
+	- Click **Generate Policy**
+	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
+
+		```json
+		{
+			"Id": "Policy1234567890",
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Sid": "Stmt1234567890",
+					"Action": [
+						"s3:GetObject"
+					],
+					"Effect": "Allow",
+					"Resource": "arn:aws:s3:::bucket-name/*",
+					"Principal": "*",
+				}
+			]
+		}
+		```
+    - Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (as shown above).
+	- Click **Save**.
+- In the **ACL - Access Control List** -> **Edit** -> enable **List** for **Everyone(Public Access)** -> Accept the warning.
+
+### AWS - IAM setup
+
+- In AWS Services Menu click **Create New Group**, add name e.g., 'group-project-name'.
+- Navigate to **Review Policy** page -> **User Groups** -> Select newly named group.
+- Navigate to **Permissions** tab -> **Add Permissions** -> Click **Attach Policies**
+- Select policy -> **Add Permissions** at the bottom, click when finished.
+- From **JSON** tab -> select **Import Managed Policy** link -> search for **S3** -> select **Amazon3FullAccess** policy -> **Import**.
+- Copy **ARN** from S3 Bucket again ->
+
+   ```json
+		{
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Effect": "Allow",
+					"Action": "s3:*",
+					"Resource": [
+						"arn:aws:s3:::bucket-name",
+						"arn:aws:s3:::bucket-name/*"
+					]
+				}
+			]
+		}
+	```
+- Click **Review Policy** -> name e.g., 'Bookworm Kid Policy' -> enter a description -> **Create Policy**
+- Search for your new policy and click on it to **Attach Policy**
+- **User Groups** -> **Add User** -> name e.g., 'Bookworm Kid user'
+- For **Select AWS Access Type** -> select **Programmatic Access** -> Add group to 'Bookworm Kid user' -> **Review User** -> **Create User**.
+- Find **Download.csv** button to download credentials and save a copy. The file can be downloaded only once, so make sure to save it securely.
+  - This file contains the user's **Access key ID** and **Secret access key**.
+	- `AWS_ACCESS_KEY_ID` = **Access key ID**
+	- `AWS_SECRET_ACCESS_KEY` = **Secret access key** 
+- Add these variables into your env.py and Heroku config vars.
+
+### Media Folder Setup
+
+1. In Heroku Config Vars, remove `DISABLE_COLLECTSTATIC` (after at least one image has been added).
+2. In AWS S3 create a new folder -> **media** -> Add project images -> **Manage Public Permissions** -> **Grant public read access to the objects** -> **Upload**
+
+### Django AWS Connect
+
+- Install the following packages to use AWS S3 Buckets in Django:
+   - `pip3 install boto3`
+   - `pip3 install django-storages`
+
+- Add the following code in settings.py:
+   ```python
+   INSTALLED_APPS = [
+       'storages',
+   ]
+
+- Check if AWS variables are present in env.py and if environment variable paths are set in settings.py:
+   ```
+   import os
+   from pathlib import Path
+   import dj_database_url
+
+   if os.path.isfile('env.py'):
+   import env
+   ```
+
+- Check if DATABASES are set up to connect with Heroku Postgres server in production vs SQLite3 when in local development.
+   ```
+   if "DATABASE_URL" in os.environ:
+	DATABASES = {
+		"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+	}
+    else:
+	DATABASES = {
+		"default": {
+			"ENGINE": "django.db.backends.sqlite3",
+			"NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+		}
+	}
+    ```
+
+- Set up media and static file storage in settings.py:
+   ```
+   STATIC_URL = "/static/"
+   STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
+   MEDIA_URL = "/media/"
+   MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+   ```
+
+- Set up S3 Bucket config in settings.py:
+   ```
+   if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'Bookworm Kid-096aafe5d13c'
+    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    ```
+
+- Create a 'custom_storages.py' file in the root directory and add the following:
+   ```
+  from django.conf import settings
+  from storages.backends.s3boto3 import S3Boto3Storage
+
+  class StaticStorage(S3Boto3Storage):
+  	location = settings.STATICFILES_LOCATION
+ 
+  class MediaStorage(S3Boto3Storage):
+	  location = settings.MEDIAFILES_LOCATION
+    ```
+
+- AWS S3 Bucket is now connected.
