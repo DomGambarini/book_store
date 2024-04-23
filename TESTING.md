@@ -132,13 +132,10 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Team | [Team](./test-images/lighthouse-team-page.png) |
 | Edit Team | [Edit Team](./test-images/lighthouse-edit-team.png) |
 | Add Team | [Add Team](./test-images/lighthouse-add-event.png) |
-
 | Admin Dashboard | [Admin Dashboard](./test-images/lighthouse-admin.png) |
 | Shopping Bag | [Shopping Bag Score](./test-images/lighthouse-shopping-bag.png) |
 | Checkout | [Checkout Score](./test-images/lighthouse-checkout.png) |
 | Checkout Success | [Checkout Score](./test-images/lighthouse-checkout-success.png) |
-
-
 | Profile | [Profile Score](./testing-images/lighthouse-my-profile.png) |
 | Sign In | [Sign In Score](./test-images/lighthouse-sign-in.png) |
 | Register | [Register](./test-images/lighthouse-register.png) |
