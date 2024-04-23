@@ -115,6 +115,10 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 1. Heroku Deployment Issue: Deployment to Heroku faced obstacles due to a configuration error. The Heroku URL in the allowed hosts contained 'https://', which needed removal to function correctly.
 1. Stripe Webhook Error: The Stripe webhook encountered a 400 HTTP error, stemming from incorrect email functionality setup for registration and order confirmation. Addressing this required updating the Python version to 3.11.9, along with configuring the runtime.txt file accordingly. Additionally, setting ACCOUNT_EMAIL_VERIFICATION to 'mandatory' resolved the error at the webhook endpoint and restored email functionality for the site.
 
+## Manual Testing
+
+### As a User Logged Out
+
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 | Top Nav menu user logged out | The free shipping treshold | It corresponds to the value set in the settings.py file. | Pass |
@@ -157,6 +161,7 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Books / All Products page user logged out | Click product / book image | Display books detail page | Pass |
 |  Books / All Products page user logged out | Click category link: fiction, non-fiction, childrenand teens in books | Display the correct category of books | Pass |
 
+[Back to top](#testing)
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
@@ -217,6 +222,7 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Get in Touch Page user logged out | Complete form correctly and click send message | Redirects to Thank You page | Pass |
 |  Get in Touch Page user logged out | Click on an empty input field | Input field becomes highlighted blue | Pass |
 
+[Back to top](#testing)
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
@@ -249,8 +255,7 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Team page user logged out | Add and edit links only visible for superuser | Links not visible | Pass |
 
 
-[Back to top](#testing)
-
+### As a User Logged In
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
@@ -272,40 +277,41 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 [Back to top](#testing)
 
 
-| Test Feature | Test Action | Expected Result | Result |
-| ------------ | ----------- | --------------- | ------ |
-| My Account admin logged in | Displays Product management, Event Management, Team Management nav links | Yes, nav links are displayed | Pass |
-
-
+### Logged in as Admin
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
-| Products as admin logged in | Edit and delete below product item links displayed when logged in as admin | Yes, edit and delete links displayed below product in all products and product details page are displayed | Pass |
-| Products admin logged in | Click edit link button | Displays edit product page | Pass |
-| Products admin logged in | Click delete link button | Product deletes and toast message displayed "Product deleted" | Pass |
-
-| Test Feature | Test Action | Expected Result | Result |
-| ------------ | ----------- | --------------- | ------ |
-| Product Management Edit page admin logged in | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
-| Product Management Edit page admin logged in | Enter letters in price field | Does not allow this action | Pass |
-| Product Management Edit page admin logged in | Click dropdown | Displays correct dropdown category list items | Pass |
-| Product Management Edit page admin logged in | Click remove image and Update product | Image removed from product | Pass |
-| Product Management Edit page admin logged in | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
-| Product Management Edit page admin logged in | Click a field within the form | Input field highlighted in blue for UX | Pass |
-| Product Management Edit page admin logged in | Click Update product | Displays toast message "Successully updated product" | Pass |
-| Product Management Edit page admin logged in | Click cancel button | Returns to all products page | Pass |
+| My Account | Displays Product management, Event Management, Team Management nav links | Yes, nav links are displayed | Pass |
 
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
-| Products admin logged in | Click edit link button | Displays edit product page | Pass |
-| Product Management Add Product page admin logged in | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
-| Product Management Add Product page admin logged in | Enter letters in price field | Does not allow this action | Pass |
-| Product Management Add Product page admin logged in | Click dropdown | Displays correct dropdown category list items | Pass |
-| Product Management Add Product page admin logged in | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
-| Product Management Add Product page admin logged in | Click a field within the form | Input field highlighted in blue for UX | Pass |
-| Product Management Add Product page admin logged in | Click Add Product | Displays toast message "Successully added product" | Pass |
-| Product Management Add Product page admin logged in | Click cancel button | Returns to all products page | Pass |
+| Products | Edit and delete below product item links displayed when logged in as admin | Yes, edit and delete links displayed below product in all products and product details page are displayed | Pass |
+| Products | Click edit link button | Displays edit product page | Pass |
+| Products | Click delete link button | Product deletes and toast message displayed "Product deleted" | Pass |
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Product Management Edit page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Product Management Edit page | Enter letters in price field | Does not allow this action | Pass |
+| Product Management Edit page | Click dropdown | Displays correct dropdown category list items | Pass |
+| Product Management Edit page | Click remove image and Update product | Image removed from product | Pass |
+| Product Management Edit page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
+| Product Management Edit page | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Product Management Edit page | Click Update product | Displays toast message "Successully updated product" | Pass |
+| Product Management Edit page | Click cancel button | Returns to all products page | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Products | Click edit link button | Displays edit product page | Pass |
+| Product Management Add Product page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Product Management Add Product page | Enter letters in price field | Does not allow this action | Pass |
+| Product Management Add Product page | Click dropdown | Displays correct dropdown category list items | Pass |
+| Product Management Add Product page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
+| Product Management Add Product page | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Product Management Add Product page | Click Add Product | Displays toast message "Successully added product" | Pass |
+| Product Management Add Product page | Click cancel button | Returns to all products page | Pass |
 
 
 
