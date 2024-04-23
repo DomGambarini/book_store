@@ -224,3 +224,28 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Footer user logged out | Adjust screen size | Footer displays responsive design | Pass |
 
 
+ Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Events page user logged out | Click events page link | Display the event page | Pass |
+|  Events page user logged out | The event card displays an event name, host, date, time, duration and description of the event | Yes, clearly display these features | Pass |
+|  Events page user logged out | Adjust screen size | Event page displays responsive design | Pass |
+
+
+ Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Events page user logged out | Click events page link | Display the event page | Pass |
+|  Events page user logged out | The event card displays an event name, host, date, time, duration and description of the event | Yes, clearly display these features | Pass |
+|  Events page user logged out | Adjust screen size | Event page displays responsive design | Pass |
+|  Events page user logged out | Click my account and Event Management not displayed | Event Management only visible for superuser | Pass |
+|  Events page user logged out | Add and edit links only visible for superuser | Links not visible | Pass |
+
+
+ Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Team page user logged out | Click Team page link | Display the Team page | Pass |
+|  Team page user logged out | The event card displays a team member name, position and bio | Yes, clearly display these features | Pass |
+|  Team page user logged out | Adjust screen size | Team page displays responsive design | Pass |
+|  Team page user logged out | Click my account and Team Management not displayed | Team Management only visible for superuser | Pass |
+|  Team page user logged out | Add and edit links only visible for superuser | Links not visible | Pass |
+
+
