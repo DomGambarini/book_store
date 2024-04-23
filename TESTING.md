@@ -115,6 +115,35 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 1. Heroku Deployment Issue: Deployment to Heroku faced obstacles due to a configuration error. The Heroku URL in the allowed hosts contained 'https://', which needed removal to function correctly.
 1. Stripe Webhook Error: The Stripe webhook encountered a 400 HTTP error, stemming from incorrect email functionality setup for registration and order confirmation. Addressing this required updating the Python version to 3.11.9, along with configuring the runtime.txt file accordingly. Additionally, setting ACCOUNT_EMAIL_VERIFICATION to 'mandatory' resolved the error at the webhook endpoint and restored email functionality for the site.
 
+
+### Results from Lighthouse
+| Page | Validation Results |
+| ---- | ---------- |
+| Home | [Home Page Score](./test-images/lighthouse-homepage.png) |
+| Get in Touch | [Get in Touch Us Score](./test-images/lighthouse-getintouch.png) |
+| Get in Touch, Thank You | [Get in Touch Us Thank You Score](./test-images/lighthouse-thank-you.png) |
+| Products | [Products Score](./test-images/lighthouse-all-products.png) |
+| Product Detail | [Products Score](./test-images/lighthouse-product-detail.png) |
+| Add Product | [Add Product](./test-images/lighthouse-add-product.png) |
+| Edit Product | [Edit Product](./test-images/lighthouse-edit-product.png) |
+| Event | [Event](./test-images/lighthouse-event-page.png) |
+| Add Event | [Add Event](./test-images/lighthouse-add-event.png) |
+| Edit Event | [Edit Event](./test-images/lighthouse-edit-event.png) |
+| Team | [Team](./test-images/lighthouse-team-page.png) |
+| Edit Team | [Edit Team](./test-images/lighthouse-edit-team.png) |
+| Add Team | [Add Team](./test-images/lighthouse-add-event.png) |
+
+| Admin Dashboard | [Admin Dashboard](./test-images/lighthouse-admin.png) |
+| Shopping Bag | [Shopping Bag Score](./test-images/lighthouse-shopping-bag.png) |
+| Checkout | [Checkout Score](./test-images/lighthouse-checkout.png) |
+| Checkout Success | [Checkout Score](./test-images/lighthouse-checkout-success.png) |
+
+
+| Profile | [Profile Score](./testing-images/lighthouse-my-profile.png) |
+| Sign In | [Sign In Score](./test-images/lighthouse-sign-in.png) |
+| Register | [Register](./test-images/lighthouse-register.png) |
+| Sign Out | [Sign Out Score](./test-images/lighthouse-sign-out.png) |
+
 ## Manual Testing
 
 ### As a User Logged Out
