@@ -118,10 +118,71 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 | Top Nav menu user logged out | The free shipping treshold | It corresponds to the value set in the settings.py file. | Pass |
-| Top Nav user menu logged out | Copy / paste url that requires authentification e.g. Product Management | Generates toast error pop up | Pass |
-| Top Nav user menu logged out | Copy / paste url that requires authentification e.g. admin panel | Generates error pop up | Pass |
-| Top Nav user menu logged out | Click search in search bar with no text entered  | Loads toast error | Pass |
-| Top Nav user menu logged out | Click Account menu | Dropdown displays Register and login | Pass |
-| Top Nav user menu logged out | Click Account / Login | Displays login page | Pass |
-| Top Nav user menu logged out | Click Account / Register | Displays register page | Pass |
-| Top Nav user menu logged out | Click Shopping bag icon | Displays empty bag page | Pass |
+| Top Nav menu user  logged out | Copy / paste url that requires authentification e.g. Product Management | Generates toast error pop up | Pass |
+| Top Nav menu user  logged out | Copy / paste url that requires authentification e.g. admin panel | Generates error pop up | Pass |
+| Top Nav menu user  logged out | Click search in search bar with no text entered  | Loads toast error | Pass |
+| Top Nav menu user  logged out | Click Account menu | Dropdown displays Register and login | Pass |
+| Top Nav menu user  logged out | Click Account / Login | Displays login page | Pass |
+| Top Nav menu user  logged out | Click Account / Register | Displays register page | Pass |
+| Top Nav menu user  logged out | Click Shopping bag icon | Displays empty bag page | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Top Nav menu user logged out | Main navigation collapses into a hamburger on small screens | Displays hamburger icon | Pass |
+| Top Nav menu user logged out | Click brand logo | Displays homepage | Pass |
+| Top Nav menu user logged out | Click brand logo | Displays homepage | Pass |
+| Top Nav menu user logged out | Home link displays in hamburger dropdown only | Displays home link in dropdown | Pass |
+| Top Nav menu user logged out | Click home link | Displays homepage | Pass |
+| Top Nav menu user logged out | Click brand logo | Displays homepage | Pass |
+| Top Nav menu user logged out | Click books dropdown link | Displays dropdown: Fiction, non-fiction, children and teens links | Pass |
+| Top Nav menu user logged out | Click fiction link | Displays books within the fiction category | Pass |
+| Top Nav menu user logged out | Click non-fiction link | Displays books within the non-fiction category | Pass |
+| Top Nav menu user logged out | Click children and teens link | Displays books within the children and teens category | Pass |
+| Top Nav menu user logged out | Click All books link | Displays books within all books category | Pass |
+| Top Nav menu user logged out | Click children and teens link | Displays books within the children and teens category | Pass |
+| Top Nav menu user logged out | Click all products dropdown link | Displays dropdown: By Price, By Category, All products links | Pass |
+| Top Nav menu user logged out | Click By Price link | Displays books By Price in ascending order | Pass |
+| Top Nav menu user logged out | Click By Category link | Displays books By Category in ascending order | Pass |
+| Top Nav menu user logged out | Click About dropdown link | Displays dropdown: Our Team, Our Events, Get in Touch links | Pass |
+| Top Nav menu user logged out | Click Our Team Link link | Displays our team page | Pass |
+| Top Nav menu user logged out | Click Our Events link | Displays our events page | Pass |
+| Top Nav menu user logged out | Click Get in touch page link | Displays our get in touch form | Pass |
+
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Books / All Products page user logged out | Image and info displayed for each book | Card display correct image and info | Pass |
+|  Books / All Products page user logged out | Click product / book image | Display books detail page | Pass |
+|  Books / All Products page user logged out | Click product / book image | Display books detail page | Pass |
+|  Books / All Products page user logged out | Click category link: fiction, non-fiction, childrenand teens in books | Display the correct category of books | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Product detail page user logged out | Image and info displayed for each book | Card displays correct image and info | Pass |
+|  Product detail page user logged out | Click product / book image | Displays image in new tab | Pass |
+|  Product detail page user logged out | Click category link | Displays category appropiate product page | Pass |
+|  Product detail page user logged out | Click increment and decrement button and 'add to bag' | Updates bag as expected | Pass |
+|  Product detail page user logged out | Manually enter quantity and 'add to bag' | Updates bag accordingly | Pass |
+|  Product detail page user logged out | Try entering a quantity above 100 or less than one | Displays error message | Pass |
+|  Product detail page user logged out | Click keep shopping | Return to all products page | Pass |
+|  Product detail page user logged out | Click add to bag | Toast with bag and delivery cost information is displayed. | Pass |
+|  Product detail page user logged out | Click add to bag to check delivery fee functionality | If over £30 displays delivery is free. If under £30 displays how much to spend for free delivery | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+|  Shopping bag user logged out | Click on shopping bag with no products | Display shopping bag is empty | Pass |
+|  Shopping bag user logged out | Add products and check shopping bag | Displays correct titles, images, quantity, price and subtotal | Pass |
+|  Shopping bag user logged out | Changing quantity of product in bag and click upadte | Display toast message with product updates | Pass |
+|  Shopping bag user logged out | Change quantity manually and click update | Display toast message with product updates | Pass |
+|  Shopping bag user logged out | Enter a decimal number fo quanity and update | Displays 500 error message | Pass |
+|  Shopping bag user logged out | Click remove | Product is removed and toast message displayed | Pass |
+|  Shopping bag user logged out | Remove all items from bag | Toast message displayed and shopping bag displays "Your bag is empty" | Pass |
+|  Shopping bag user logged out | Click keep shopping | Returns to all products page | Pass |
+|  Shopping bag user logged out | Click secure checkout | Displays checkout form | Pass |
+|  Shopping bag user logged out | Adding product to an empty bag | Shopping bag icon changes from blue to green | Pass |
+
+
