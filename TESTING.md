@@ -118,13 +118,13 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 | Top Nav menu user logged out | The free shipping treshold | It corresponds to the value set in the settings.py file. | Pass |
-| Top Nav menu user  logged out | Copy / paste url that requires authentification e.g. Product Management | Generates toast error pop up | Pass |
-| Top Nav menu user  logged out | Copy / paste url that requires authentification e.g. admin panel | Generates error pop up | Pass |
-| Top Nav menu user  logged out | Click search in search bar with no text entered  | Loads toast error | Pass |
-| Top Nav menu user  logged out | Click Account menu | Dropdown displays Register and login | Pass |
-| Top Nav menu user  logged out | Click Account / Login | Displays login page | Pass |
-| Top Nav menu user  logged out | Click Account / Register | Displays register page | Pass |
-| Top Nav menu user  logged out | Click Shopping bag icon | Displays empty bag page | Pass |
+| Top Nav menu user logged out | Copy / paste url that requires authentification e.g. Product Management | Generates toast error pop up | Pass |
+| Top Nav menu user logged out | Copy / paste url that requires authentification e.g. admin panel | Generates error pop up | Pass |
+| Top Nav menu user logged out | Click search in search bar with no text entered  | Loads toast error | Pass |
+| Top Nav menu user logged out | Click Account menu | Dropdown displays Register and login | Pass |
+| Top Nav menu user logged out | Click Account / Login | Displays login page | Pass |
+| Top Nav menu user logged out | Click Account / Register | Displays register page | Pass |
+| Top Nav menu user logged out | Click Shopping bag icon | Displays empty bag page | Pass |
 
 
 | Test Feature | Test Action | Expected Result | Result |
@@ -247,5 +247,33 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Team page user logged out | Adjust screen size | Team page displays responsive design | Pass |
 |  Team page user logged out | Click my account and Team Management not displayed | Team Management only visible for superuser | Pass |
 |  Team page user logged out | Add and edit links only visible for superuser | Links not visible | Pass |
+
+
+[Back to top](#testing)
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Top Nav menu user logged in | Click Profile icon in main nav menu | Loads My Profile page | Pass |
+| My Profile user logged in | User can see delivery info if previously saved and chronological order history | Yes, it displays this info | Pass |
+| My Profile menu user logged in | Order history displays link to order number and order confirmation | Yes, it displays this info | Pass |
+| My Profile menu user logged in | Click order history number link | Correclty displays the order confirmation | Pass |
+| My Profile menu user logged in | Change default delivery data and click update information | Correclty displays updated values in field with a toat success message | Pass |
+| My Profile menu user logged in | Change default delivery data and click update information | Correctly displays updated values in field with a toat success message | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Checkout user logged in | Displays users saved address with the name field left blank | Yes, the details are prefilled | Pass |
+| Checkout user logged in | Bottom of the form displays a checkbox that saves delivery information | Yes, checkbox visible | Pass |
+| Checkout user logged in | Update details at checkout with save information checkbox ticked and click secure checkout | Visit My Profile and delivery info updated | Pass |
+
+
+[Back to top](#testing)
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Checkout user logged in | Displays users saved address with the name field left blank | Yes, the details are prefilled | Pass |
 
 
