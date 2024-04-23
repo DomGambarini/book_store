@@ -282,16 +282,32 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | ------------ | ----------- | --------------- | ------ |
 | Products as admin logged in | Edit and delete below product item links displayed when logged in as admin | Yes, edit and delete links displayed below product in all products and product details page are displayed | Pass |
 | Products admin logged in | Click edit link button | Displays edit product page | Pass |
-| Product Management page admin logged in | Submit form with an empty required field | Generates error message mssing field | Pass |
-| Product Management page admin logged in | Enter letters in price field | Does not allow his action | Pass |
+| Products admin logged in | Click delete link button | Product deletes and toast message displayed "Product deleted" | Pass |
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Product Management Edit page admin logged in | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Product Management Edit page admin logged in | Enter letters in price field | Does not allow this action | Pass |
+| Product Management Edit page admin logged in | Click dropdown | Displays correct dropdown category list items | Pass |
+| Product Management Edit page admin logged in | Click remove image and Update product | Image removed from product | Pass |
+| Product Management Edit page admin logged in | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
+| Product Management Edit page admin logged in | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Product Management Edit page admin logged in | Click Update product | Displays toast message "Successully updated product" | Pass |
+| Product Management Edit page admin logged in | Click cancel button | Returns to all products page | Pass |
+
+
+| Test Feature | Test Action | Expected Result | Result |
+| ------------ | ----------- | --------------- | ------ |
+| Products admin logged in | Click edit link button | Displays edit product page | Pass |
+| Product Management Add Product page admin logged in | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
+| Product Management Add Product page admin logged in | Enter letters in price field | Does not allow this action | Pass |
+| Product Management Add Product page admin logged in | Click dropdown | Displays correct dropdown category list items | Pass |
+| Product Management Add Product page admin logged in | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
+| Product Management Add Product page admin logged in | Click a field within the form | Input field highlighted in blue for UX | Pass |
+| Product Management Add Product page admin logged in | Click Add Product | Displays toast message "Successully added product" | Pass |
+| Product Management Add Product page admin logged in | Click cancel button | Returns to all products page | Pass |
 
 
 
-| Status | **Main Website - Admin Logged In - Products/Product Detail Page**
-|:-------:|:--------|
-
-| &check; | The update button leads to saving the updated information and takes the user to the product detail page.
-| &check; | The admin can add a product with no image. In this case a placeholder images is displayed.
-| &check; | Before the admin can delete a chosen product from the store, they have to confirm their deletion choice.
 
 
