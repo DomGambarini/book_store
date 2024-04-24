@@ -118,7 +118,7 @@ The all products page displays all the books in the store. In the books nav link
 
 ![Navigation Bar Image](./test-images/add-product-form.png)
 
-We have the product management page which is located in the My Account link and only accessable for superusers. This form allows you to add products to the site, 
+We have the product management page which is located in the My Account link and only accessable for superusers. This form allows you to add products to the site.
 
 ![Navigation Bar Image](./test-images/edit-product.png)
 
@@ -127,13 +127,16 @@ The edit link on the products page opens the edit product page allowing you to a
 ### Toast
 
 ![Navigation Bar Image](./test-images/alert-toast.png)
+
 We also have toast which is imported from Boostrap and acts as notifications for the site when you perform an action. Here we see the notifications when you click to edit a product you will receive an 'alert'.
 
+![Navigation Bar Image](./test-images/delete-toast.png) 
+![Navigation Bar Image](./test-images/toast-success.png)
 
-![Navigation Bar Image](./test-images/delete-toast.png) | ![Navigation Bar Image](./test-images/toast-success.png)
 If you delete or succesfully add a product.
 
 ![Navigation Bar Image](./test-images/toast-failed-to-add.png)
+
 Or try to post the form with invalid data. 
 
 ### Team Page
