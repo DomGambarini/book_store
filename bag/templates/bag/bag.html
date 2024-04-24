@@ -121,25 +121,26 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script>
-    // Update quantity on click
-    $('.update-link').click(function(e) {
-        let form = $(this).prev('.update-form');
-        form.submit();
-    })
+// Update quantity on click
+$('.update-link').click(function(e) {
+    let form = $(this).prev('.update-form');
+    form.submit();
+});
 
-    // Remove item on click
-    $('.remove-item').click(function(e) {
-        let csrfToken = "{{ csrf_token }}";
-        let itemId = $(this).attr('id').split('remove_')[1];
-        let url = `/bag/remove/${itemId}/`;
-        let data = {
-            'csrfmiddlewaretoken': csrfToken,
-            };
+// Remove item on click
+$('.remove-item').click(function(e) {
+    let csrfToken = "{{ csrf_token }}";
+    let itemId = $(this).attr('id').split('remove_')[1];
+    let url = `/bag/remove/${itemId}/`;
+    let data = {
+        'csrfmiddlewaretoken': csrfToken,
+    };
 
-        $.post(url, data)
+    $.post(url, data)
         .done(function() {
             location.reload();
         });
-    })
+});
+
 </script>
 {% endblock %}

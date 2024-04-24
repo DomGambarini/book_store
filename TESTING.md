@@ -51,7 +51,7 @@ I used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML
 
 | Feature               | admin                                       | forms                                       | models                                      | urls                                        | views                                       | extra                                      |
 |-----------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|--------------------------------------------|
-| Bag                   | n/a                                         | n/a                                         | n/a                                         | none ![python validation](./test-images/bag-urls.py.png) | none ![python validation](./test-images/bag-views.py.png) | n/a |
+| Bag                   | n/a                                         | n/a                                         | n/a                                         | none ![python validation](./test-images/bag-urls.py.png) | none ![python validation](./test-images/bag-views.py.png) | none ![python validation](./test-images/bag-custom-filter.py.png) |
 | Checkout              | none ![python validation](./test-images/checkout-admin.py.png) | none ![python validation](./test-images/checkout-forms.py.png) | none ![python validation](./test-images/checkout-models.py.png) | none ![python validation](./test-images/checkout-urls.py.png) | none ![python validation](./test-images/checkout-views.py.png) | none ![python validation](./test-images/checkout-signals.py.png), none ![python validation](./test-images/checkout-webhook-handler.py.png), none ![python validation](./test-images/checkout-webhook.py.png) |
 | Contact               | n/a                                         | none ![python validation](./test-images/contact-forms.py.png) | n/a                                         | none ![python validation](./test-images/contact-urls.py.png) | none ![python validation](./test-images/contact-views.py.png) | n/a                                        |
 | Events                | none ![python validation](./test-images/events-admin.py.png) | none ![python validation](./test-images/events-forms.py.png) | none ![python validation](./test-images/events-models.py.png) | none ![python validation](./test-images/events-urls.py.png) | none ![python validation](./test-images/events-views.py.png) | n/a                                        |
@@ -72,7 +72,7 @@ I used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML
 |---------|----------|----------|-----------|
 | Bag - Quantity Update/Remove Script | ![Bag update/remove js](./test-images/bag-update-remove.js.png) | none | none |
 | Checkout - Stripe Script | ![Stripe elements](./test-images/checkout-stripe.js.png) | none | none |
-| Products - Quantity Input Script | ![Product quantity script](./test-images/product-quantity-input-script.png) | none  | none |
+| Products - Quantity Input Script | ![Product quantity script](./test-images/product-quantity-input-script.js.png) | none  | none |
 
 [Back to top](#testing)
 ### CSS Testing
