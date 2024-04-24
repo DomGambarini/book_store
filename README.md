@@ -93,15 +93,26 @@ The navigation menu displays two icons on full screen - shopping bag and my acco
 ![Navigation Bar Image](./test-images/my-account-dropdown.png)
 ![Navigation Bar Image](./test-images/navbar.png)
 
+### Search Bar 
+
 The Search bar is also displayed centrally in the top nav menu and is highlighted blue when selected.
 
 ![Navigation Bar Image](./test-images/search-bar.png)
 ![Navigation Bar Image](./test-images/search-bar-blue.png)
 
+### Responsive Navigation Menu
+
 The nav menu is fully responsive to the size of the screen and the search bar becomes an icon with a dropdown. We also have a toggler menu on screen sizes as displayed. 
 
 ![Navigation Bar Image](./test-images/nav-menu-small.png)
 ![Navigation Bar Image](./test-images/nav-toggler.png)
+
+
+### All Products Page
+
+The all products page displays all the books in the store. In the books nav link you can also choose to search for books by genre- Fiction, Non-Fiction, Children and Teens. The All Products nav link also allows to search for books by price and category in ascending order. The book image is a link through to the product detail page. Below that we have the price and link to the category. The edit and delete links are visible only for superusers. the edit link opens opens a edit form to edit the product while the delete button removes the item. 
+![Navigation Bar Image](./test-images/all-books.png)
+
 
 ### Database Schema (ERD)
 [Database Schema](./test-images/db-schema.png)
