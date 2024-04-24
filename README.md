@@ -75,18 +75,35 @@ Join us in exploring the world of indie books, enhancing your reading experience
 
 ## Features
 
-### Homepage
+Each page consists of a navigation menu fixed to the top and a footer fixed to the bottom of the screen. The delivery banner is also present promoting free delivery if you spend over £30. The navigation bar is responsive with the screen size and becomes a hamburger icon with aside menu when the screen size shrinks.
 
 ![Navigation Bar Image](./test-images/homepage.png)
 ![Navigation Bar Image](./test-images/delivery-banner.png)
 ![Navigation Bar Image](./test-images/footer.png)
+
+### Homepage
+On the homepage you will see a hero image that set the tone of the website ang grabs the users attention - miniminimalist, quirky, unique feel to the site with the slogan, "Discovering books beyond the ordinary". You see a call to action button which take the shopper straight to the all products page. 
+
 ![Navigation Bar Image](./test-images/hero-image-call-to-action.png)
+
+### Navigation Menu
+
+The navigation menu displays two icons on full screen - shopping bag and my account. All icons become highlighed when the cursor hovers over them and when item is added to the shopping bag it displays the current cost and the bag turns green.  
+
 ![Navigation Bar Image](./test-images/my-account-dropdown.png)
 ![Navigation Bar Image](./test-images/nav-icons.png)
 ![Navigation Bar Image](./test-images/navbar-icon-item.png)
 ![Navigation Bar Image](./test-images/navbar.png)
+
+The Search bar is also displayed centrally in the top nav menu and is highlighted blue when selected.
+
 ![Navigation Bar Image](./test-images/search-bar.png)
 ![Navigation Bar Image](./test-images/search-bar-blue.png)
+
+The nav menu is fully responsive to the size of the screen and the search bar becomes an icon with a dropdown. We also have a toggler menu on screen sizes as displayed. 
+
+![Navigation Bar Image](./test-images/nav-menu-small.png)
+![Navigation Bar Image](./test-images/nav-toggler.png)
 
 ### Database Schema (ERD)
 [Database Schema](./test-images/db-schema.png)
