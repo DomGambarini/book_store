@@ -19,7 +19,41 @@ Join us in exploring the world of indie books, enhancing your reading experience
 
 # Table of Contents
 
-- [Store-Goals] (#store-goals)
+# Table of Contents
+
+- [Store Goals](#store-goals)
+- [User Stories](#user-stories)
+  - [Viewing and Navigation](#viewing-and-navigation)
+  - [Registration and User Accounts](#registration-and-user-accounts)
+  - [Sorting and Searching](#sorting-and-searching)
+  - [Purchasing and Checkout](#purchasing-and-checkout)
+- [Features](#features)
+  - [Homepage](#homepage)
+  - [Navigation Menu](#navigation-menu)
+  - [Search Bar](#search-bar)
+  - [Responsive Navigation Menu](#responsive-navigation-menu)
+  - [All Products Page](#all-products-page)
+  - [Product Management Page](#product-management-page)
+  - [Toast](#toast)
+  - [Team Page](#team-page)
+  - [Event Page](#event-page)
+  - [Shopping Bag](#shopping-bag)
+  - [Checkout Page](#checkout-page)
+  - [Database Schema (ERD)](#database-schema-erd)
+- [Technologies Used](#technologies-used)
+  - [Languages](#languages)
+  - [Frameworks and Software](#frameworks-and-software)
+  - [Python Packages](#python-packages)
+- [Project Deployment](#project-deployment)
+  - [ElephantSQL Database](#elephantsql-database)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Google Mail Setup](#google-mail-setup)
+  - [AWS Config](#aws-config)
+  - [Media Folder Setup](#media-folder-setup)
+  - [Django AWS Connect](#django-aws-connect)
+  - [Stripe](#stripe)
+  - [Cloning or Forking the Code](#cloning-or-forking-the-code)
+
 
 ## Store Goals
 
@@ -174,6 +208,10 @@ You will also receive the same information inside the bag page but also a featur
 
 You will also notice plus and minus signs to increment and decrement the quantity of items. Click update and it will update the quanity. Remove will delete the item entirly from the bag. 
 
+
+### Checkout Page
+
+![Navigation Bar Image](./test-images/checkout.png)
 
 ### Database Schema (ERD)
 [Database Schema](./test-images/db-schema.png)
