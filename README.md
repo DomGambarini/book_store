@@ -91,7 +91,6 @@ On the homepage you will see a hero image that set the tone of the website ang g
 The navigation menu displays two icons on full screen - shopping bag and my account. All icons become highlighed when the cursor hovers over them and when item is added to the shopping bag it displays the current cost and the bag turns green.  
 
 ![Navigation Bar Image](./test-images/my-account-dropdown.png)
-![Navigation Bar Image](./test-images/nav-icons.png)![Navigation Bar Image](./test-images/navbar-icon-item.png)
 ![Navigation Bar Image](./test-images/navbar.png)
 
 The Search bar is also displayed centrally in the top nav menu and is highlighted blue when selected.
