@@ -40,10 +40,9 @@
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{ event.name }}</h5>
-                    <p class="card-text">Host: {{ event.host }}</p>
-                    <p class="card-text">{{ event.event_date| date:"D d M Y" }}</p>
-                    <p class="card-text">{{ event.event_time }}</p>
-                    <p class="card-text">Duration: {{ event.duration|format_duration }}</p>
+                    <p class="card-text"><strong>{{ event.host }}</strong></p>
+                    <p class="card-text"><strong>{{ event.event_date| date:"D d M Y" }} | {{ event.event_time }}</strong></p>
+                    <p class="card-text"><strong>Duration: {{ event.duration|format_duration }}</strong></p>
                     <p class="card-text">{{ event.description }}</p>
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
