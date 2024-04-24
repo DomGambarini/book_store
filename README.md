@@ -73,6 +73,21 @@ Join us in exploring the world of indie books, enhancing your reading experience
 - As a customer, I want to check out through a simple, secure process, so I can confidently make purchases.
 - As a customer, I want to receive a confirmation email after I make a purchase, so I can be sure my order has been processed.
 
+## Features
+
+### Homepage
+
+![Navigation Bar Image](./test-images/homepage.png)
+![Navigation Bar Image](./test-images/delivery-banner.png)
+![Navigation Bar Image](./test-images/footer.png)
+![Navigation Bar Image](./test-images/hero-image-call-to-action.png)
+![Navigation Bar Image](./test-images/my-account-dropdown.png)
+![Navigation Bar Image](./test-images/nav-icons.png)
+![Navigation Bar Image](./test-images/navbar-icon-item.png)
+![Navigation Bar Image](./test-images/navbar.png)
+![Navigation Bar Image](./test-images/search-bar.png)
+![Navigation Bar Image](./test-images/search-bar-blue.png)
+
 ### Database Schema (ERD)
 [Database Schema](./test-images/db-schema.png)
 
