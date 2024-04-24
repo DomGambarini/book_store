@@ -22,19 +22,26 @@ def add_event(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
+    template = 'events/add_event.html'
 
     if request.method == "POST":
-        # form = EventForm(request.POST)
         form = EventForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Successfully added an event!')
             return redirect('events')
+        else:
+            messages.error(
+                request,
+                'Failed to add event. Please ensure the form is valid.')
+    else:
+        form = EventForm()
 
-    form = EventForm()
+    template = 'events/add_event.html'
     context = {
         'form': form
-    }
-    return render(request, 'events/add_event.html', context)
+        }
+    return render(request, template, context)
 
 
 @login_required
@@ -45,15 +52,25 @@ def edit_event(request, event_id):
 
     event = get_object_or_404(Event, id=event_id)
     if request.method == "POST":
-        form = EventForm(request.POST, instance=event)
+        form = EventForm(request.POST, request.FILES, instance=event)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Successfully updated event!')
             return redirect('events')
-    form = EventForm(instance=event)
+        else:
+            messages.error(
+                request,
+                'Failed to update event. Please ensure the form is valid.')
+    else:
+        form = EventForm(instance=event)
+        messages.info(request, f'You are editing {event.name}')
+
+    template = 'events/edit_event.html'
     context = {
         'form': form,
+        'event': event,
     }
-    return render(request, 'events/edit_event.html', context)
+    return render(request, template, context)
 
 
 @login_required
