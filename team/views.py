@@ -21,18 +21,27 @@ def add_team_member(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
+    template = 'team/add_team_member.html'
 
     if request.method == "POST":
-        form = TeamForm(request.POST)
+        form = TeamForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Successfully added a new Team Member!')
             return redirect('team')
+        else:
+            messages.error(
+                request,
+                'Failed to add a team member. Please ensure the form is valid.'
+                )
+    else:
+        form = TeamForm()
 
-    form = TeamForm()
+    template = 'team/add_team_member.html'
     context = {
         'form': form
-    }
-    return render(request, 'team/add_team_member.html', context)
+        }
+    return render(request, template, context)
 
 
 @login_required
@@ -43,15 +52,25 @@ def edit_team_member(request, member_id):
 
     team_member = get_object_or_404(Team, id=member_id)
     if request.method == "POST":
-        form = TeamForm(request.POST, instance=team_member)
+        form = TeamForm(request.POST, request.FILES, instance=team_member)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Successfully updated team member!')
             return redirect('team')
-    form = TeamForm(instance=team_member)
+        else:
+            messages.error(
+                request,
+                'Failed to update. Please ensure the form is valid.')
+    else:
+        form = TeamForm(instance=team_member)
+        messages.info(request, f'You are editing {team_member.name}')
+
+    template = 'team/edit_team_member.html'
     context = {
-        'form': form
+        'form': form,
+        'team': team,
     }
-    return render(request, 'team/edit_team_member.html', context)
+    return render(request, template, context)
 
 
 @login_required
