@@ -60,6 +60,7 @@ Join us in exploring the world of indie books, enhancing your reading experience
   - [Django AWS Connect](#django-aws-connect)
   - [Stripe](#stripe)
   - [Cloning or Forking the Code](#cloning-or-forking-the-code)
+- [Credits](#credit)
 
 
 ## Store Goals
@@ -653,3 +654,17 @@ Forking: refers to creating a personal copy of someone else's repository under y
 2. On the repository's page, click on the "Fork" button located at the top right corner of the page. This action creates a copy of the repository under your GitHub account.
 3. GitHub will redirect you to the forked repository, which is now hosted under your account. You can identify it by the "forked from" message displayed at the top of the repository name.
 4. At this point, you have successfully forked the repository, and you can start working with the code.
+
+
+## Credits
+------
+
+- Boutique Ado for general guidance and mainly for the shopping bag and checkout functionalities
+- Contact Form - this link seems to not work anymore
+- Privacy Policy and Terms of Use by Termly
+- Top tips for engaging reluctant readers
+- Book descriptions and book details were taken from Shel Life
+- Lucid Charts
+- Images were taken from Unsplash, Shelf Life
+- Favicon
+
