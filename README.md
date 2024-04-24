@@ -232,11 +232,11 @@ If you are registered with the site you can save your delivery details and if yo
 
 ### Login
 
-![Navigation Bar Image](./test-images/login.png)
+![Navigation Bar Image](./test-images/signin.png)
 
 ### Logout
 
-![Navigation Bar Image](./test-images/logout.png)
+![Navigation Bar Image](./test-images/sign-out.png)
 
 ### Register
 
@@ -635,6 +635,8 @@ Configure Stripe config vars and webhooks:
   - Copy STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY and add them to Heroku config vars, assign these variables values from your Stripe account.
   - Create a Webhook Endpoint in the Stripe by navigating to webhooks and clicking on Add endpoint. Use the Heroku application url with checkout/wh/ added to the end of the url string. Select all events and click Add endpoint.
   - Click on Reveal signing secret and save this value as a Heroku config var called STRIPE_WH_SECRET.
+
+### Cloning or Forking the Code
 
 #### Here is how to clone code
 
