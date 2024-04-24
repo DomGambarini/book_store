@@ -657,7 +657,6 @@ Forking: refers to creating a personal copy of someone else's repository under y
 
 
 ## Credits
-------
 
 - Boutique Ado for general guidance and mainly for the shopping bag and checkout functionalities
 - Contact Form - this link seems to not work anymore
