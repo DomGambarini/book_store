@@ -60,7 +60,7 @@ Join us in exploring the world of indie books, enhancing your reading experience
   - [Django AWS Connect](#django-aws-connect)
   - [Stripe](#stripe)
   - [Cloning or Forking the Code](#cloning-or-forking-the-code)
-- [Credits](#credit)
+- [Credits](#credits)
 
 
 ## Store Goals
