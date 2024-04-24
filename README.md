@@ -158,6 +158,21 @@ For the sake of repeating the same imges and similar forms I haven't added the t
 
 ### Shopping Bag
 
+![Navigation Bar Image](./test-images/empty-shopping-bag.png)
+
+If you click on the shopping bag and there are no items in the bag. You will recive this message. 
+
+![Navigation Bar Image](./test-images/bag-popup.png)
+
+From the product detail page, if you have added items to the bag you will be displayed with a pop up with the quantity, title, image and secure checkout option.
+
+![Navigation Bar Image](./test-images/delivery-spend-alert.png)
+ 
+You will also receive the same information inside the bag page but also a feature letting you how much you need to spend to receive free delivery. 
+
+![Navigation Bar Image](./test-images/shopping-bag.png)
+
+You will also notice plus and minus signs to increment and decrement the quantity of items. Click update and it will update the quanity. Remove will delete the item entirly from the bag. 
 
 
 ### Database Schema (ERD)
