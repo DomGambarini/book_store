@@ -15,7 +15,9 @@ In addition to our diverse book collection, we are proud to host storytelling ev
 
 Join us in exploring the world of indie books, enhancing your reading experience, and discovering your next favorite author!
 
-![Mock Up](documentation/website-images/mock-up.png)
+![Mock Up](./test-images/mockup.png)
+
+[Link to deployed site](https://indie-book-emporium-b10db93763d5.herokuapp.com/)
 
 # Table of Contents
 
