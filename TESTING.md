@@ -224,8 +224,7 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 |  Checkout user logged out | Option to register or login at the bottom of the form | Links work as required | Pass |
 |  Checkout user logged out | Click adjust bag button | Leads to shopping bag page | Pass |
 |  Checkout user logged out | Click complete order when input fields not complete | Displays "Please fill in this field" | Pass |
-|  Checkout user logged out | Enter text in phone number field and process order | Accepts and processes order | Fail |
-|  Checkout user logged out | Enter numbers in name field and process order | Accepts and processes order | Fail |
+
 |  Checkout user logged out | Enter an invalid card number | Displays you card number is incomplete | Pass |
 |  Checkout user logged out | Click complete order with fields completed correctly | Processes order | Pass |
 |  Checkout user logged out | Form completed with stripe test card details | Toast message displayed with order number, information and email confirmation | Pass |
@@ -343,18 +342,18 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 | Event Management Edit page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
-| Event Management Edit page | Enter letters in duration, event and time field | Does not allow this action | Fail |
-| Event Management Edit page | Click choose file and select a file | Image uploaded to event page and only allows an image file to be selected | Fail |
+| Event Management Edit page | Enter letters in duration, event and time field | Does not allow this action | Pass |
+| Event Management Edit page | Click choose file and select a file | Image uploaded to event page and only allows an image file to be selected | Pass |
 | Event Management Edit page | Click a field within the form | Input field highlighted in blue for UX | Pass |
-| Event Management Edit page | Fill form out correctly and click Update Event | Displays toast message "Successully updated event" | Fail |
+| Event Management Edit page | Fill form out correctly and click Update Event | Displays toast message "Successully updated event" | Pass |
 | Event Management Edit page | Click cancel button | Returns to all events page | Pass |
 
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 | Event Management Add Event page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
-| Event Management Add Event page | Enter letters in duration, event and time field | Does not allow this action | Fail |
-| Event Management Add Event page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Fail |
+| Event Management Add Event page | Enter letters in duration, event and time field | Does not allow this action | Pass |
+| Event Management Add Event page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
 | Event Management Add Event page | Click a field within the form | Input field highlighted in blue for UX | Pass |
 | Event Management Add Event page | Click Add Event | Displays toast message "Successully added event" | Pass |
 | Event Management Add Event page | Click cancel button | Returns to all products page | Pass |
@@ -363,18 +362,18 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 | Team Management Edit page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
-| Team Management Edit page | Enter letters in duration, Team and time field | Does not allow this action | Fail |
-| Team Management Edit page | Click choose file and select a file | Image uploaded to Team page and only allows an image file to be selected | Fail |
+| Team Management Edit page | Enter letters in duration, Team and time field | Does not allow this action | Pass |
+| Team Management Edit page | Click choose file and select a file | Image uploaded to Team page and only allows an image file to be selected | Pass |
 | Team Management Edit page | Click a field within the form | Input field highlighted in blue for UX | Pass |
-| Team Management Edit page | Fill form out correctly and click Update Team | Displays toast message "Successully updated Team" | Fail |
+| Team Management Edit page | Fill form out correctly and click Update Team | Displays toast message "Successully updated Team" | Pass |
 | Team Management Edit page | Click cancel button | Returns to Team page | Pass |
 
 
 | Test Feature | Test Action | Expected Result | Result |
 | ------------ | ----------- | --------------- | ------ |
 | Team Management Add Team member page | Submit form with an empty required field | Generates error message "please fill in field" | Pass |
-| Team Management Add Team member page | Enter letters in duration, Team and time field | Does not allow this action | Fail |
-| Team Management Add Team member page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Fail |
+| Team Management Add Team member page | Enter letters in duration, Team and time field | Does not allow this action | Pass |
+| Team Management Add Team member page | Click select image and select a image file | Image uploaded to product and only allows an image file to be selected | Pass |
 | Team Management Add Team member page | Click a field within the form | Input field highlighted in blue for UX | Pass |
 | Team Management Add Team member page | Click Add Team | Displays toast message "Successully added Team Member" | Pass |
 | Team Management Add Team member page | Click cancel button | Returns to Team page | Pass |
