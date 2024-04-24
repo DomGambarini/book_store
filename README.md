@@ -124,6 +124,8 @@ We have the product management page which is located in the My Account link and 
 
 The edit link on the products page opens the edit product page allowing you to amend any products on the site.
 
+![Navigation Bar Image](./test-images/product-detail.png)
+
 ### Toast
 
 ![Navigation Bar Image](./test-images/alert-toast.png)
@@ -143,9 +145,20 @@ Or try to post the form with invalid data.
 
 ![Navigation Bar Image](./test-images/team.png)
 
+This page sits within the About section in the navbar and gives an intrduction to the staff at Indie Book Emporium. I thought it was appropiate to make this a model as this gives the store owner full flexibility of adding and deleteing staff as this is something that could change on the regular. We also have the option to delete and edit team members by a supersuser. In my account you can edit team mebers in Team Management. 
+
 ### Event Page
 
 ![Navigation Bar Image](./test-images/events-page.png)
+
+Similarly to teams, events is an error which requires updating and deleteing on the regular and felt it would be neccessry to create model for the store owenr to have full functionality. Thos also has an option to delete or edit the event. Edit event can be found in My Account, Event Managemnet. 
+
+For the sake of repeating the same imges and similar forms I haven't added the toast and edit form for both Events and Teams. They are similar to Product management and have similar required attributes. 
+
+
+### Shopping Bag
+
+
 
 ### Database Schema (ERD)
 [Database Schema](./test-images/db-schema.png)
