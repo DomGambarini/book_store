@@ -216,7 +216,12 @@ You will also notice plus and minus signs to increment and decrement the quantit
 ![Navigation Bar Image](./test-images/checkout.png)
 
 ### Database Schema (ERD)
+
 [Database Schema](./test-images/db-schema.png)
+
+Before diving into code, I dedicated substantial time to planning the concept. A key aspect of this preparation involved crafting an Entity-Relationship Diagram (ERD) to describe each model and their interconnections. Employing Lucid Charts facilitated the visualization of this schema.
+
+The ERD proved indispensable in developing all models for the application. It served as a blueprint and made clear the relationships between various components and the necessary fields for each model.
 
 ## Technologies Used
 ### Languages

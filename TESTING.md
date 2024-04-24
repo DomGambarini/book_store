@@ -1,14 +1,18 @@
 # Testing
-- [Testing](#testing)
-  - [Code Validation](#code-validation)
+## Table of Contents
+
+- [Code Validation](#code-validation)
     - [HTML Testing](#html-testing)
     - [Python Testing](#python-testing)
     - [JavaScript Validation](#javascript-validation)
     - [CSS Testing](#css-testing)
-    - [Browser Compatibility](#browser-compatibility)
-    - [Responsiveness Test](#responsiveness-test)
-    - [Fixed Bugs](#fixed-bugs)
-    - [Unfixed Bugs](#unfixed-bugs)
+- [Fixed Bugs](#fixed-bugs)
+- [Results from Lighthouse](#results-from-lighthouse)
+- [Manual Testing](#manual-testing)
+    - [As a User Logged Out](#as-a-user-logged-out)
+    - [As a User Logged In](#as-a-user-logged-in)
+    - [Logged in as Admin](#logged-in-as-admin)
+
 
 
 ## Code Validation
