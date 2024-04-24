@@ -110,9 +110,39 @@ The nav menu is fully responsive to the size of the screen and the search bar be
 
 ### All Products Page
 
-The all products page displays all the books in the store. In the books nav link you can also choose to search for books by genre- Fiction, Non-Fiction, Children and Teens. The All Products nav link also allows to search for books by price and category in ascending order. The book image is a link through to the product detail page. Below that we have the price and link to the category. The edit and delete links are visible only for superusers. the edit link opens opens a edit form to edit the product while the delete button removes the item. 
+The all products page displays all the books in the store. In the books nav link you can also choose to search for books by genre- Fiction, Non-Fiction, Children and Teens. The All Products nav link also allows to search for books by price and category in ascending order. The book image is a link through to the product detail page. Below that we have the price and link to the category. The edit and delete links are visible only for superusers. the edit link opens opens a edit form to edit the product while the delete button removes the item.
+
 ![Navigation Bar Image](./test-images/all-books.png)
 
+### Product Management Page
+
+![Navigation Bar Image](./test-images/add-product-form.png)
+
+We have the product management page which is located in the My Account link and only accessable for superusers. This form allows you to add products to the site, 
+
+![Navigation Bar Image](./test-images/edit-product.png)
+
+The edit link on the products page opens the edit product page allowing you to amend any products on the site.
+
+### Toast
+
+![Navigation Bar Image](./test-images/alert-toast.png)
+We also have toast which is imported from Boostrap and acts as notifications for the site when you perform an action. Here we see the notifications when you click to edit a product you will receive an 'alert'.
+
+
+![Navigation Bar Image](./test-images/delete-toast.png) | ![Navigation Bar Image](./test-images/toast-success.png)
+If you delete or succesfully add a product.
+
+![Navigation Bar Image](./test-images/toast-failed-to-add.png)
+Or try to post the form with invalid data. 
+
+### Team Page
+
+![Navigation Bar Image](./test-images/team.png)
+
+### Event Page
+
+![Navigation Bar Image](./test-images/events-page.png)
 
 ### Database Schema (ERD)
 [Database Schema](./test-images/db-schema.png)
