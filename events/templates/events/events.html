@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load custom_filters %}
+{% load crispy_forms_tags %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -41,7 +43,7 @@
                     <p class="card-text">Host: {{ event.host }}</p>
                     <p class="card-text">{{ event.event_date| date:"D d M Y" }}</p>
                     <p class="card-text">{{ event.event_time }}</p>
-                    <p class="card-text">Duration: {{ event.duration }}</p>
+                    <p class="card-text">Duration: {{ event.duration|format_duration }}</p>
                     <p class="card-text">{{ event.description }}</p>
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
