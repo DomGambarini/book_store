@@ -41,6 +41,11 @@ Join us in exploring the world of indie books, enhancing your reading experience
   - [Event Page](#event-page)
   - [Shopping Bag](#shopping-bag)
   - [Checkout Page](#checkout-page)
+  - [Profile] (#profile)
+  - [Register] (#register)
+  - [Login] (#login)
+  - [Logout] (#logout)
+  - [Get in Touch] (#get-in-touch)
   - [Database Schema (ERD)](#database-schema-erd)
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
@@ -214,6 +219,38 @@ You will also notice plus and minus signs to increment and decrement the quantit
 ### Checkout Page
 
 ![Navigation Bar Image](./test-images/checkout.png)
+![Navigation Bar Image](./test-images/checkout-thank-you.png)
+
+The checkout page requires each filled to be completed except the county, state or loaclity field. It the corner you get itemised bill with the quantity of each product, delivery cost if incurred and grand total. Below compete order button it highlights how much the customers card will be chatged before completing the order. The adjust bag button brings you back to the shopping bag. There's also a check box if you wish to save the delivery information and updat your profile. You can checkout as a guest. If you are a guest you will be given a link to either sign up or log in. Once the checkout is processed you will be redirected to thank you page with a toast displayig your order number.
+
+### Profile
+
+If you are registered with the site you can save your delivery details and if you have placed pevious orders you ca see them displayed with links to prvious orders. 
+
+![Navigation Bar Image](./test-images/profile-page.png)
+
+### Login
+
+![Navigation Bar Image](./test-images/login.png)
+
+### Logout
+
+![Navigation Bar Image](./test-images/logout.png)
+
+### Register
+
+![Navigation Bar Image](./test-images/register-page.png)
+![Navigation Bar Image](./test-images/registration-alert.png)
+
+### Get in Touch
+
+![Navigation Bar Image](./test-images/get-in-touch.png)
+![Navigation Bar Image](./test-images/get-in-touch-match-format.png)
+![Navigation Bar Image](./test-images/get-in-touch-missing-field.png)
+
+There also a Get in Touch form withthe About nav link which allows customer to send an email as a general enquiry. The email is received at djangoproject618@gmail.com. If the data is not in the correct format or is missing when trying to post the form the will receive the following required attributes. Once the form is completed and sent correctly, the user will be directed to the thank you page. 
+
+![Navigation Bar Image](./test-images/get-in-touch-thank-you.png)
 
 ### Database Schema (ERD)
 
