@@ -48,6 +48,7 @@ Join us in exploring the world of indie books, enhancing your reading experience
   - [Logout](#logout)
   - [Get in Touch](#get-in-touch)
   - [Database Schema (ERD)](#database-schema-erd)
+- [Testing](#TESTING.md)
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
   - [Frameworks and Software](#frameworks-and-software)
@@ -304,11 +305,11 @@ Before diving into code, I dedicated substantial time to planning the concept. A
 
 The ERD proved vital in developing all models for the application. It served as a blueprint and made clear the relationships between various components and the necessary fields for each model.
 
-### Testing
+## Testing
 
 Here is a link to all files and documents for testing the site.
 
-[Link to Testing Documentation](testing.md)
+[Link to Testing Documentation](TESTING.md)
 
 
 ## Technologies Used
