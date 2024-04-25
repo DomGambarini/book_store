@@ -195,7 +195,7 @@ The nav menu is fully responsive to the size of the screen and the search bar be
 
 ### All Products Page
 
-The all products page displays all the books in the store. In the books nav link you can also choose to search for books by genre- Fiction, Non-Fiction, Children and Teens. The All Products nav link also allows to search for books by price and category in ascending order. The book image is a link through to the product detail page. Below that we have the price and link to the category. The edit and delete links are visible only for superusers. the edit link opens opens a edit form to edit the product while the delete button removes the item.
+The all products page displays all the books in the store. In the books nav link you can also choose to search for books by genre- Fiction, Non-Fiction, Children and Teens. The All Products nav link also allows to search for books by price and category in ascending order. The book image is a link through to the product detail page. Below that we have the price and link to the category. The edit and delete links are visible only for superusers. the edit link directs the superuser to the edit form allowing you to change the data of a product while the delete button removes the item from the store an database.
 
 ![Navigation Bar Image](./test-images/all-books.png)
 
@@ -207,7 +207,7 @@ We have the product management page which is located in the My Account link and 
 
 ![Navigation Bar Image](./test-images/edit-product.png)
 
-The edit link on the products page opens the edit product page allowing you to amend any products on the site.
+The edit link on the products page directs you to the edit product form allowing superusers to amend any product on the site.
 
 ![Navigation Bar Image](./test-images/product-detail.png)
 
@@ -215,37 +215,37 @@ The edit link on the products page opens the edit product page allowing you to a
 
 ![Navigation Bar Image](./test-images/alert-toast.png)
 
-We also have toast which is imported from Boostrap and acts as notifications for the site when you perform an action. Here we see the notifications when you click to edit a product you will receive an 'alert'.
+We also have toast which is imported from Boostrap and acts as notifications pop-up. It is position in the top right corner of the site and diaplays when you perform an action. Above we recieve an 'alert' notification when you click to edit a product link.
 
 ![Navigation Bar Image](./test-images/delete-toast.png) 
 ![Navigation Bar Image](./test-images/toast-success.png)
 
-If you delete or succesfully add a product.
+If you delete or succesfully add a product you will recieve the above notifcations.
 
 ![Navigation Bar Image](./test-images/toast-failed-to-add.png)
 
-Or try to post the form with invalid data. 
+Or try to post the form with invalid data an error will display. 
 
 ### Team Page
 
 ![Navigation Bar Image](./test-images/team.png)
 
-This page sits within the About section in the navbar and gives an intrduction to the staff at Indie Book Emporium. I thought it was appropiate to make this a model as this gives the store owner full flexibility of adding and deleteing staff as this is something that could change on the regular. We also have the option to delete and edit team members by a supersuser. In my account you can edit team mebers in Team Management. 
+This Team page sits within the About section in the navbar and gives an introduction to the staff and a dpper understanding of what the store is about and it's story. I thought it was appropiate to create this a model because it allows the store owner full flexibility of adding and deleteing staff as this is something that could change on the regular. We also have the option to delete and edit team members by a supersuser. In my account you can edit team mebers in Team Management. 
 
 ### Event Page
 
 ![Navigation Bar Image](./test-images/events-page.png)
 
-Similarly to teams, events is an error which requires updating and deleteing on the regular and felt it would be neccessry to create model for the store owenr to have full functionality. Thos also has an option to delete or edit the event. Edit event can be found in My Account, Event Managemnet. 
+Similarly to teams, events are an area that requires regular updating and deletion. I felt it would be necessary to create a model for the store owner to have full functionality. This model also provides options to delete or edit events. The 'Edit Event' feature can be found in 'My Account' under 'Event Management.'
 
-For the sake of repeating the same imges and similar forms I haven't added the toast and edit form for both Events and Teams. They are similar to Product management and have similar required attributes. 
+For the sake of consistency with images and forms, I haven't added the toast and edit form for both Events and Teams. They are similar to Product Management and have similar required attributes. 
 
 
 ### Shopping Bag
 
 ![Navigation Bar Image](./test-images/empty-shopping-bag.png)
 
-If you click on the shopping bag and there are no items in the bag. You will recive this message. 
+If you click on the shopping bag and there are no items in the bag. You will receive this message. 
 
 ![Navigation Bar Image](./test-images/bag-popup.png)
 
