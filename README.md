@@ -160,7 +160,7 @@ Join us in exploring the world of indie books, enhancing your reading experience
 
 ## Features
 
-Each page consists of a navigation menu fixed to the top and a footer fixed to the bottom of the screen. The delivery banner is also present promoting free delivery if you spend over £30. The navigation bar is responsive with the screen size and becomes a hamburger icon with aside menu when the screen size shrinks.
+Each page consists of a navigation menu fixed to the top and a footer fixed to the bottom of the screen. Additionally, there is a delivery banner promoting free delivery if you spend over £30. The navigation bar is responsive, adapting to the screen size and transforming into a hamburger icon with a side menu when the screen size shrinks.
 
 ![Navigation Bar Image](./test-images/homepage.png)
 ![Navigation Bar Image](./test-images/delivery-banner.png)
