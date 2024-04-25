@@ -40,7 +40,8 @@ class Product(models.Model):
     number_of_pages = models.PositiveIntegerField()
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image = models.ImageField(null=True, blank=True)
+    image = models.ImageField(
+        null=False, blank=False)
     sku = models.CharField(max_length=254, null=True, blank=True)
     isbn = models.CharField(max_length=13, null=True, blank=True)
 
