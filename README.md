@@ -265,12 +265,14 @@ You will also notice plus and minus signs to increment and decrement the quantit
 ### Checkout Page
 
 ![Navigation Bar Image](./test-images/checkout.png)
-![Navigation Bar Image](./test-images/webhook-success.png)
+![Navigation Bar Image](./test-images/checkout-thank-you.png)
 
 The checkout page requires each field to be completed except the county, state or loaclity field. It the corner you get itemised bill with the quantity of each product, delivery cost if incurred and grand total. Below the complete order button it highlights how much the customers card will be charged before processing the order. The adjust bag button brings you back to the shopping bag. There's also a check box if you wish to save the delivery information and update your profile. You can also checkout as a guest. If you are a guest you will be given a link to either sign up or log in. Once the checkout is processed you will be redirected to thank you page with a toast displayig your order number.
 
 
 ### Stripe Webhook
+
+![Navigation Bar Image](./test-images/webhook-success.png)
 
 All payments are handled by Stripe online payment processing system, and webhooks are implemented to ensure that all transactions are handled correctly in case of any problems during the payment process.
 
@@ -280,7 +282,6 @@ Stripe test card:
 - CVC number: any random three-digit number
 - Expiration date: any date in the future
 
-![Navigation Bar Image](./test-images/checkout-thank-you.png)
 
 ### Profile
 
