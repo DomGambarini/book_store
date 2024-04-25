@@ -48,6 +48,8 @@ I used [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML
 | Admin Panel (including all categories and templates) | 0 | ![html validation](./test-images/html-validator-warning-admin-panel.png) |
 | Get in Touch | 0 | 0 |
 
+The warning with the admin panel was no major concern and for the risk of breaking anything it was left.
+
 
 ### Python Testing
 [CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python files.
@@ -118,6 +120,7 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 1. Static Files Deployment Error: A deployment error arose when attempting to deploy static files to the AWS S3 bucket. This was traced back to a user not being created during the bucket creation process.
 1. Heroku Deployment Issue: Deployment to Heroku faced obstacles due to a configuration error. The Heroku URL in the allowed hosts contained 'https://', which needed removal to function correctly.
 1. Stripe Webhook Error: The Stripe webhook encountered a 400 HTTP error, stemming from incorrect email functionality setup for registration and order confirmation. Addressing this required updating the Python version to 3.11.9, along with configuring the runtime.txt file accordingly. Additionally, setting ACCOUNT_EMAIL_VERIFICATION to 'mandatory' resolved the error at the webhook endpoint and restored email functionality for the site.
+1. Another issue the deployed site could only be accessed through Mozilla and Firefox and not Google Chrome. This has been rectified and was an issue with dev tools and it required for the data to be cleared. 
 
 
 ### Results from Lighthouse
@@ -149,39 +152,41 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 
 ### As a User Logged Out
 
-| Test Feature | Test Action | Expected Result | Result |
-| ------------ | ----------- | --------------- | ------ |
-| Top Nav menu user logged out | The free shipping treshold | It corresponds to the value set in the settings.py file. | Pass |
-| Top Nav menu user logged out | Copy / paste url that requires authentification e.g. Product Management | Generates toast error pop up | Pass |
-| Top Nav menu user logged out | Copy / paste url that requires authentification e.g. admin panel | Generates error pop up | Pass |
-| Top Nav menu user logged out | Click search in search bar with no text entered  | Loads toast error | Pass |
-| Top Nav menu user logged out | Click Account menu | Dropdown displays Register and login | Pass |
-| Top Nav menu user logged out | Click Account / Login | Displays login page | Pass |
-| Top Nav menu user logged out | Click Account / Register | Displays register page | Pass |
-| Top Nav menu user logged out | Click Shopping bag icon | Displays empty bag page | Pass |
+| Test Feature               | Test Action                                                | Expected Result                                   | Result |
+| -------------------------- | ---------------------------------------------------------- | -------------------------------------------------- | ------ |
+| Top Nav menu user logged out | The free shipping threshold                              | It corresponds to the value set in the settings.py file. | Pass   |
+| Top Nav menu user logged out | Copy/paste URL that requires authentication, e.g., Product Management | Generates a toast error pop-up                  | Pass   |
+| Top Nav menu user logged out | Copy/paste URL that requires authentication, e.g., admin panel | Generates an error pop-up                        | Pass   |
+| Top Nav menu user logged out | Click search in search bar with no text entered           | Loads a toast error                              | Pass   |
+| Top Nav menu user logged out | Click Account menu                                        | Dropdown displays Register and login             | Pass   |
+| Top Nav menu user logged out | Click Account / Login                                     | Displays the login page                          | Pass   |
+| Top Nav menu user logged out | Click Account / Register                                  | Displays the register page                       | Pass   |
+| Top Nav menu user logged out | Click Shopping bag icon                                   | Displays the empty bag page                      | Pass   |
 
 
-| Test Feature | Test Action | Expected Result | Result |
-| ------------ | ----------- | --------------- | ------ |
-| Top Nav menu user logged out | Main navigation collapses into a hamburger on small screens | Displays hamburger icon | Pass |
-| Top Nav menu user logged out | Click brand logo | Displays homepage | Pass |
-| Top Nav menu user logged out | Click brand logo | Displays homepage | Pass |
-| Top Nav menu user logged out | Home link displays in hamburger dropdown only | Displays home link in dropdown | Pass |
-| Top Nav menu user logged out | Click home link | Displays homepage | Pass |
-| Top Nav menu user logged out | Click brand logo | Displays homepage | Pass |
-| Top Nav menu user logged out | Click books dropdown link | Displays dropdown: Fiction, non-fiction, children and teens links | Pass |
-| Top Nav menu user logged out | Click fiction link | Displays books within the fiction category | Pass |
-| Top Nav menu user logged out | Click non-fiction link | Displays books within the non-fiction category | Pass |
-| Top Nav menu user logged out | Click children and teens link | Displays books within the children and teens category | Pass |
-| Top Nav menu user logged out | Click All books link | Displays books within all books category | Pass |
-| Top Nav menu user logged out | Click children and teens link | Displays books within the children and teens category | Pass |
-| Top Nav menu user logged out | Click all products dropdown link | Displays dropdown: By Price, By Category, All products links | Pass |
-| Top Nav menu user logged out | Click By Price link | Displays books By Price in ascending order | Pass |
-| Top Nav menu user logged out | Click By Category link | Displays books By Category in ascending order | Pass |
-| Top Nav menu user logged out | Click About dropdown link | Displays dropdown: Our Team, Our Events, Get in Touch links | Pass |
-| Top Nav menu user logged out | Click Our Team Link link | Displays our team page | Pass |
-| Top Nav menu user logged out | Click Our Events link | Displays our events page | Pass |
-| Top Nav menu user logged out | Click Get in touch page link | Displays our get in touch form | Pass |
+
+| Test Feature                        | Test Action                         | Expected Result                                             | Results |
+| ----------------------------------- | ----------------------------------- | ----------------------------------------------------------- | ------- |
+| Top Nav menu user logged out       | Main navigation collapses into a hamburger icon on small screens | Displays hamburger icon                                    | Pass    |
+| Top Nav menu user logged out       | Click brand logo                   | Displays homepage                                           | Pass    |
+| Top Nav menu user logged out       | Click brand logo                   | Displays homepage                                           | Pass    |
+| Top Nav menu user logged out       | Home link displays in hamburger dropdown only | Displays home link in dropdown                         | Pass    |
+| Top Nav menu user logged out       | Click home link                    | Displays homepage                                           | Pass    |
+| Top Nav menu user logged out       | Click brand logo                   | Displays homepage                                           | Pass    |
+| Top Nav menu user logged out       | Click books dropdown link          | Displays dropdown: Fiction, non-fiction, children and teens links | Pass    |
+| Top Nav menu user logged out       | Click fiction link                 | Displays books within the fiction category                   | Pass    |
+| Top Nav menu user logged out       | Click non-fiction link             | Displays books within the non-fiction category               | Pass    |
+| Top Nav menu user logged out       | Click children and teens link      | Displays books within the children and teens category        | Pass    |
+| Top Nav menu user logged out       | Click All books link               | Displays books within all books category                     | Pass    |
+| Top Nav menu user logged out       | Click children and teens link      | Displays books within the children and teens category        | Pass    |
+| Top Nav menu user logged out       | Click all products dropdown link  | Displays dropdown: By Price, By Category, All products links | Pass    |
+| Top Nav menu user logged out       | Click By Price link                | Displays books By Price in ascending order                   | Pass    |
+| Top Nav menu user logged out       | Click By Category link             | Displays books By Category in ascending order                | Pass    |
+| Top Nav menu user logged out       | Click About dropdown link          | Displays dropdown: Our Team, Our Events, Get in Touch links | Pass    |
+| Top Nav menu user logged out       | Click Our Team Link link           | Displays our team page                                       | Pass    |
+| Top Nav menu user logged out       | Click Our Events link              | Displays our events page                                     | Pass    |
+| Top Nav menu user logged out       | Click Get in touch page link      | Displays our get in touch form                               | Pass    |
+
 
 
 | Test Feature | Test Action | Expected Result | Result |
