@@ -189,26 +189,28 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 
 
 
-| Test Feature | Test Action | Expected Result | Result |
-| ------------ | ----------- | --------------- | ------ |
-|  Books / All Products page user logged out | Image and info displayed for each book | Card display correct image and info | Pass |
-|  Books / All Products page user logged out | Click product / book image | Display books detail page | Pass |
-|  Books / All Products page user logged out | Click product / book image | Display books detail page | Pass |
-|  Books / All Products page user logged out | Click category link: fiction, non-fiction, childrenand teens in books | Display the correct category of books | Pass |
+| Test Feature                                     | Test Action                   | Expected Result                           | Result |
+| ----------------------------------------------- | ----------------------------- | ----------------------------------------- | ------ |
+| Books / All Products page user logged out       | Image and info displayed for each book | Card displays correct image and info | Pass   |
+| Books / All Products page user logged out       | Click product / book image    | Display book's detail page               | Pass   |
+| Books / All Products page user logged out       | Click product / book image    | Display book's detail page               | Pass   |
+| Books / All Products page user logged out       | Click category link: fiction, non-fiction, children and teens in books | Display the correct category of books | Pass   |
+
 
 [Back to top](#testing)
 
-| Test Feature | Test Action | Expected Result | Result |
-| ------------ | ----------- | --------------- | ------ |
-|  Product detail page user logged out | Image and info displayed for each book | Card displays correct image and info | Pass |
-|  Product detail page user logged out | Click product / book image | Displays image in new tab | Pass |
-|  Product detail page user logged out | Click category link | Displays category appropiate product page | Pass |
-|  Product detail page user logged out | Click increment and decrement button and 'add to bag' | Updates bag as expected | Pass |
-|  Product detail page user logged out | Manually enter quantity and 'add to bag' | Updates bag accordingly | Pass |
-|  Product detail page user logged out | Try entering a quantity above 100 or less than one | Displays error message | Pass |
-|  Product detail page user logged out | Click keep shopping | Return to all products page | Pass |
-|  Product detail page user logged out | Click add to bag | Toast with bag and delivery cost information is displayed. | Pass |
-|  Product detail page user logged out | Click add to bag to check delivery fee functionality | If over £30 displays delivery is free. If under £30 displays how much to spend for free delivery | Pass |
+| Test Feature                                   | Test Action                                                   | Expected Result                                   | Result |
+| --------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------- | ------ |
+| Product detail page user logged out           | Image and info displayed for each book                       | Card displays correct image and info             | Pass   |
+| Product detail page user logged out           | Click product / book image                                    | Displays image in new tab                        | Pass   |
+| Product detail page user logged out           | Click category link                                           | Displays appropriate product page by category    | Pass   |
+| Product detail page user logged out           | Click increment and decrement button and 'add to bag'        | Updates bag as expected                          | Pass   |
+| Product detail page user logged out           | Manually enter quantity and 'add to bag'                     | Updates bag accordingly                          | Pass   |
+| Product detail page user logged out           | Try entering a quantity above 100 or less than one           | Displays error message                          | Pass   |
+| Product detail page user logged out           | Click 'Keep Shopping'                                         | Returns to all products page                    | Pass   |
+| Product detail page user logged out           | Click 'Add to Bag'                                            | Toast with bag and delivery cost information is displayed | Pass   |
+| Product detail page user logged out           | Click 'Add to Bag' to check delivery fee functionality       | If over £30, displays "delivery is free". If under £30, displays how much to spend for free delivery | Pass |
+
 
 
 | Test Feature | Test Action | Expected Result | Result |
@@ -297,8 +299,8 @@ Both base.css and checkout.css files passed. ![CSS Validation](./test-images/css
 | My Profile user logged in | User can see delivery info if previously saved and chronological order history | Yes, it displays this info | Pass |
 | My Profile menu user logged in | Order history displays link to order number and order confirmation | Yes, it displays this info | Pass |
 | My Profile menu user logged in | Click order history number link | Correclty displays the order confirmation | Pass |
-| My Profile menu user logged in | Change default delivery data and click update information | Correclty displays updated values in field with a toat success message | Pass |
-| My Profile menu user logged in | Change default delivery data and click update information | Correctly displays updated values in field with a toat success message | Pass |
+| My Profile menu user logged in | Change default delivery data and click update information | Correclty displays updated values in field with a toast success message | Pass |
+| My Profile menu user logged in | Change default delivery data and click update information | Correctly displays updated values in field with a toast success message | Pass |
 
 
 | Test Feature | Test Action | Expected Result | Result |
