@@ -29,6 +29,7 @@ Join us in exploring the world of indie books, enhancing your reading experience
   - [Registration and User Accounts](#registration-and-user-accounts)
   - [Sorting and Searching](#sorting-and-searching)
   - [Purchasing and Checkout](#purchasing-and-checkout)
+  - [Wireframes](#wireframes)
 - [Features](#features)
   - [Homepage](#homepage)
   - [Navigation Menu](#navigation-menu)
@@ -114,6 +115,45 @@ Join us in exploring the world of indie books, enhancing your reading experience
 - As a customer, I want to view and modify the contents of my shopping cart, including quantities or removing items, before proceeding to checkout.
 - As a customer, I want to check out through a simple, secure process, so I can confidently make purchases.
 - As a customer, I want to receive a confirmation email after I make a purchase, so I can be sure my order has been processed.
+
+## Wireframes
+
+### Homepage
+
+![Navigation Bar Image](./test-images/wf-homepage.png)
+
+### Product page
+
+![Navigation Bar Image](./test-images/wf-all-products.png)
+
+### Team
+
+![Navigation Bar Image](./test-images/wf-event-page.png)
+
+### Homepage
+
+![Navigation Bar Image](./test-images/wf-team.png)
+
+### Checkout
+
+![Navigation Bar Image](./test-images/wf-checkout.png)
+
+### Bag
+
+![Navigation Bar Image](./test-images/wf-bag.png)
+
+### Sign In
+
+![Navigation Bar Image](./test-images/wf-sign-in.png)
+
+### Profile
+
+![Navigation Bar Image](./test-images/wf-profile.png)
+
+### Get In Touch
+
+![Navigation Bar Image](./test-images/wf-get-in-touch.png)
+
 
 ## Features
 
