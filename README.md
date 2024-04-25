@@ -265,11 +265,11 @@ You will also notice plus and minus signs to increment and decrement the quantit
 ![Navigation Bar Image](./test-images/checkout.png)
 ![Navigation Bar Image](./test-images/checkout-thank-you.png)
 
-The checkout page requires each filled to be completed except the county, state or loaclity field. It the corner you get itemised bill with the quantity of each product, delivery cost if incurred and grand total. Below compete order button it highlights how much the customers card will be chatged before completing the order. The adjust bag button brings you back to the shopping bag. There's also a check box if you wish to save the delivery information and updat your profile. You can checkout as a guest. If you are a guest you will be given a link to either sign up or log in. Once the checkout is processed you will be redirected to thank you page with a toast displayig your order number.
+The checkout page requires each field to be completed except the county, state or loaclity field. It the corner you get itemised bill with the quantity of each product, delivery cost if incurred and grand total. Below the complete order button it highlights how much the customers card will be charged before processing the order. The adjust bag button brings you back to the shopping bag. There's also a check box if you wish to save the delivery information and update your profile. You can also checkout as a guest. If you are a guest you will be given a link to either sign up or log in. Once the checkout is processed you will be redirected to thank you page with a toast displayig your order number.
 
 ### Profile
 
-If you are registered with the site you can save your delivery details and if you have placed pevious orders you ca see them displayed with links to prvious orders. 
+If you are registered with the site you can save your delivery details for quicker checkout on a return visit. In your profile page with 'my account' link all orders will be saved with an order number link directing you to each order confirmation. 
 
 ![Navigation Bar Image](./test-images/profile-page.png)
 
@@ -292,7 +292,7 @@ If you are registered with the site you can save your delivery details and if yo
 ![Navigation Bar Image](./test-images/get-in-touch-match-format.png)
 ![Navigation Bar Image](./test-images/get-in-touch-missing-field.png)
 
-There also a Get in Touch form withthe About nav link which allows customer to send an email as a general enquiry. The email is received at djangoproject618@gmail.com. If the data is not in the correct format or is missing when trying to post the form the will receive the following required attributes. Once the form is completed and sent correctly, the user will be directed to the thank you page. 
+There is also a 'Get in Touch' form accessible through the 'About' nav link, which allows customers to send an email for general inquiries. The email is received at djangoproject618@gmail.com. If the data is not in the correct format or is missing when attempting to submit the form, the user will receive a notification indicating the required attributes. Once the form is completed and submitted correctly, the user will be directed to the thank you page.
 
 ![Navigation Bar Image](./test-images/get-in-touch-thank-you.png)
 
@@ -302,7 +302,14 @@ There also a Get in Touch form withthe About nav link which allows customer to s
 
 Before diving into code, I dedicated substantial time to planning the concept. A key aspect of this preparation involved crafting an Entity-Relationship Diagram (ERD) to describe each model and their interconnections. Employing Lucid Charts facilitated the visualization of this schema.
 
-The ERD proved indispensable in developing all models for the application. It served as a blueprint and made clear the relationships between various components and the necessary fields for each model.
+The ERD proved vital in developing all models for the application. It served as a blueprint and made clear the relationships between various components and the necessary fields for each model.
+
+### Testing
+
+Here is a link to all files and documents for testing the site.
+
+[Link to Testing Documentation](testing.md)
+
 
 ## Technologies Used
 ### Languages
