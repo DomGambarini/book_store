@@ -1,7 +1,7 @@
 # book_store
 # Indie Book Emporium
 
-Welcome to the **Indie Book Emporium**, your gateway to a world of undiscovered literary gems. Our e-commerce platform specializes in offering unique, captivating books from lesser-known publishers and writers, providing avid readers with access to titles not found in mainstream bookstores.
+Welcome to the **Indie Book Emporium**, your gateway to a world of undiscovered literary gems. Our e-commerce platform specialises in offering unique, captivating books from lesser-known publishers and writers, providing avid readers with access to titles not found in mainstream bookstores.
 
 ## Why Choose Indie Book Emporium?
 
@@ -78,7 +78,6 @@ Join us in exploring the world of indie books, enhancing your reading experience
 
 - Penetrate niche markets by targeting specific demographics interested in alternative and indie literature
 
-- Increase user engagement through interactive features such as reviews, forums, social media
 
 ### Customer Goals
 
@@ -126,11 +125,11 @@ Join us in exploring the world of indie books, enhancing your reading experience
 
 ![Navigation Bar Image](./test-images/wf-all-products.png)
 
-### Team
+### Our Event Page
 
 ![Navigation Bar Image](./test-images/wf-event-page.png)
 
-### Homepage
+### Our Team Page
 
 ![Navigation Bar Image](./test-images/wf-team.png)
 
@@ -153,6 +152,10 @@ Join us in exploring the world of indie books, enhancing your reading experience
 ### Get In Touch
 
 ![Navigation Bar Image](./test-images/wf-get-in-touch.png)
+
+### Register
+
+![Navigation Bar Image](./test-images/wf-register.png)
 
 
 ## Features
