@@ -42,6 +42,7 @@ Join us in exploring the world of indie books, enhancing your reading experience
   - [Event Page](#event-page)
   - [Shopping Bag](#shopping-bag)
   - [Checkout Page](#checkout-page)
+  - [Stripe Webhook](#stripe-webhook)
   - [Profile](#profile)
   - [Register](#register)
   - [Login](#login)
@@ -267,6 +268,7 @@ You will also notice plus and minus signs to increment and decrement the quantit
 ![Navigation Bar Image](./test-images/webhook-success.png)
 
 The checkout page requires each field to be completed except the county, state or loaclity field. It the corner you get itemised bill with the quantity of each product, delivery cost if incurred and grand total. Below the complete order button it highlights how much the customers card will be charged before processing the order. The adjust bag button brings you back to the shopping bag. There's also a check box if you wish to save the delivery information and update your profile. You can also checkout as a guest. If you are a guest you will be given a link to either sign up or log in. Once the checkout is processed you will be redirected to thank you page with a toast displayig your order number.
+
 
 ### Stripe Webhook
 
