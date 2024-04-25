@@ -48,7 +48,7 @@ Join us in exploring the world of indie books, enhancing your reading experience
   - [Logout](#logout)
   - [Get in Touch](#get-in-touch)
   - [Database Schema (ERD)](#database-schema-erd)
-- [Testing](#TESTING.md)
+- [Testing](#TESTING)
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
   - [Frameworks and Software](#frameworks-and-software)
