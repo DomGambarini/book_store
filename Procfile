@@ -1,1 +1,1 @@
-web: gunicorn indie_book_emporium.wsgi:applicatio
+web: gunicorn indie_book_emporium.wsgi:application
